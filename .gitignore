@@ -15,6 +15,7 @@ ENV/
 # Logs
 logs/
 *.log
+**/logs/
 
 # Data
 data/
@@ -44,3 +45,12 @@ dist/
 
 # Backtest results
 backtest_results.png
+
+# أسرار — لا تُرفع أبدًا
+*.key
+
+# فك مؤقت لحزمة الوكلاء
+bundle-extracted/
+
+# حالة المهام المحلية
+trading-desk/jobs/**/status.json
