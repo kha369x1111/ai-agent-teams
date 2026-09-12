@@ -1,15 +1,56 @@
-# أسرار — لا تُرفع أبدًا
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Environment
 .env
+.env.local
+
+# Logs
+logs/
+*.log
+**/logs/
+
+# Data
+data/
+*.csv
+*.json
+!config/*.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Backtest results
+backtest_results.png
+
+# أسرار — لا تُرفع أبدًا
 *.key
 
-# مخرجات تشغيل محلية
-trading-desk/logs/
-**/logs/
-__pycache__/
-*.pyc
-
-# فك مؤقت لحزمة الوكلاء (الأصل مضغوط في المستودع)
+# فك مؤقت لحزمة الوكلاء
 bundle-extracted/
 
-# حالة المهام المحلية (تُنشأ عند التشغيل) — النماذج المرجعية في jobs/ تبقى بدونها
+# حالة المهام المحلية
 trading-desk/jobs/**/status.json
