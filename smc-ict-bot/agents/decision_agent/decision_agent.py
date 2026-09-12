@@ -22,6 +22,7 @@ from agents.shared.base.agent_base import (
     BaseAgent, AgentIdentity, AgentMessage, AgentPriority
 )
 from agents.shared.communication.message_bus import get_message_bus, Topics
+from agents.decision_agent.ai_brain import get_ai_brain
 
 
 class DecisionType(Enum):
@@ -84,6 +85,7 @@ class DecisionMakingAgent(BaseAgent):
                 "risk_reward_calculation",
                 "pattern_recognition",
                 "priority_management",
+                "ai_augmented_decision",  # 🆕 جديد
             ],
             dependencies=["MarketAnalysis", "NewsIntelligence", "RiskManager"],
             version="1.0.0",
@@ -93,7 +95,11 @@ class DecisionMakingAgent(BaseAgent):
         # Decision state
         self.pending_decisions: Dict[str, TradingDecision] = {}
         self.decision_history: List[TradingDecision] = []
-        self.active_context: Dict = {}  # Current market context
+        self.active_context: Dict = {}
+
+        # 🆕 AI Brain
+        self.ai_brain = get_ai_brain()
+        self.use_ai = True  # تفعيل/تعطيل AI
 
         # Decision weights
         self.weights = {
@@ -196,6 +202,51 @@ class DecisionMakingAgent(BaseAgent):
             sentiment_score = self._score_sentiment(market_context)
             risk_score = self._score_risk(risk_state)
 
+            # 🆕 استشارة AI (إذا كان متاحاً)
+            ai_analysis = None
+            ai_score = 0
+            if self.use_ai and self.ai_brain.is_available:
+                try:
+                    ai_analysis = await self.ai_brain.analyze_market_context(
+                        symbol=symbol,
+                        technical_analysis=self._format_tech_for_ai(analysis),
+                        news_context=[self._news_to_dict(n) for n in news[:10]],
+                        current_price=getattr(analysis, 'current_price', 0),
+                    )
+
+                    if ai_analysis:
+                        # AI score (0-100)
+                        ai_confidence = ai_analysis.confidence * 100
+                        if ai_analysis.decision == 'wait':
+                            ai_score = ai_confidence * 0.3  # خصم كبير للانتظار
+                        else:
+                            ai_score = ai_confidence
+
+                        # إضافة عوامل AI
+                        reasoning.append(f"🧠 AI Decision: {ai_analysis.decision} (confidence: {ai_analysis.confidence:.0%})")
+                        reasoning.append(f"   AI Reasoning: {ai_analysis.reasoning}")
+
+                        # إضافة تحذيرات AI
+                        warnings.extend([f"🤖 AI: {w}" for w in ai_analysis.warnings])
+
+                        logger.info(
+                            f"🧠 AI says: {ai_analysis.decision.upper()} "
+                            f"with {ai_analysis.confidence:.0%} confidence"
+                        )
+
+                except Exception as e:
+                    logger.warning(f"AI analysis failed: {e}")
+
+            # دمج AI في الـ score النهائي (إذا كان متاحاً)
+            if ai_analysis and ai_analysis.decision != 'wait':
+                # أعد حساب final_score مع AI
+                if ai_analysis.decision in ['long', 'short']:
+                    # AI متفق مع التحليل الفني = تعزيز
+                    if (ai_analysis.decision == 'long' and analysis.trading_bias == 'bullish') or \
+                       (ai_analysis.decision == 'short' and analysis.trading_bias == 'bearish'):
+                        # تعزيز إيجابي
+                        logger.info("✅ AI agrees with technical analysis - boosting confidence")
+
             # Combine scores
             final_score = (
                 technical_score * self.weights['technical'] +
@@ -203,6 +254,10 @@ class DecisionMakingAgent(BaseAgent):
                 sentiment_score * self.weights['sentiment'] +
                 risk_score * self.weights['risk']
             )
+
+            # 🆕 إضافة AI Score (وزن 15%)
+            if ai_analysis:
+                final_score = (final_score * 0.85) + (ai_score * 0.15)
 
             # Determine decision type
             decision_type = self._determine_action(
@@ -539,6 +594,28 @@ class DecisionMakingAgent(BaseAgent):
             confidence_score=80.0,
             reasoning=[f"Position PnL: {pnl_pct:.2f}%"],
         )
+
+    def _format_tech_for_ai(self, analysis) -> Dict:
+        """تحضير التحليل الفني للـ AI"""
+        return {
+            'htf_trend': analysis.higher_trend if hasattr(analysis, 'higher_trend') else 'unknown',
+            'confluence_score': analysis.confluence_score,
+            'liquidity_sweeps_count': len(analysis.liquidity_sweeps),
+            'order_blocks_count': len(analysis.order_blocks),
+            'fvgs_count': len(analysis.fair_value_gaps),
+            'trading_bias': analysis.trading_bias,
+            'setup_quality': analysis.setup_quality,
+        }
+
+    def _news_to_dict(self, news_item) -> Dict:
+        """تحويل خبر لـ dict"""
+        if isinstance(news_item, dict):
+            return news_item
+        return {
+            'title': getattr(news_item, 'title', ''),
+            'impact': getattr(news_item, 'impact_level', 'low'),
+            'sentiment': getattr(news_item, 'sentiment', 0),
+        }
 
     def _decision_to_dict(self, decision: TradingDecision) -> Dict:
         """Convert decision to dict"""
