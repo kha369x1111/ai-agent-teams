@@ -91,6 +91,17 @@ class Shot:
         fy = fy0 + (fy1 - fy0) * e
         return z, fx, fy
 
+    def frame_parallax(self, base: Image.Image, t_local: float, strength: float = 1.0,
+                       mask: Image.Image | None = None) -> Image.Image:
+        """طبقتان بعمق مختلف: خلفية أبطأ ومقدمة أسرع، تُدمجان بقناع ناعم."""
+        z, fx, fy = self.camera(t_local)
+        dx = 0.012 * strength
+        back = crop_layer(base, max(1.0, z - 0.05 * strength), fx, fy, -dx)
+        front = crop_layer(base, z + 0.06 * strength, fx, fy, dx * 1.6)
+        if mask is None:
+            mask = depth_mask(fx, fy)
+        return Image.composite(front, back, mask)
+
     def frame(self, base: Image.Image, t_local: float) -> Image.Image:
         z, fx, fy = self.camera(t_local)
         bw, bh = base.width / z, base.height / z
@@ -99,6 +110,25 @@ class Shot:
         px, py = int(round(x)), int(round(y))
         box = (px, py, min(base.width, px + int(round(bw))), min(base.height, py + int(round(bh))))
         return base.crop(box).resize((W, H), Image.BILINEAR)
+
+
+def depth_mask(fx: float, fy: float, rx: float = 0.60, ry: float = 0.58) -> Image.Image:
+    """قناع عمق ناعم: أبيض (مقدمة) حول نقطة التركيز، أسود (خلفية) في الأطراف."""
+    w, h = W // 2, H // 2
+    m = Image.new("L", (w, h), 0)
+    d = ImageDraw.Draw(m)
+    cx, cy = fx * w, fy * h
+    d.ellipse([cx - rx * w, cy - ry * h, cx + rx * w, cy + ry * h], fill=255)
+    return m.filter(ImageFilter.GaussianBlur(70)).resize((W, H), Image.BILINEAR)
+
+
+def crop_layer(base: Image.Image, z: float, fx: float, fy: float, dx: float = 0.0) -> Image.Image:
+    bw, bh = base.width / z, base.height / z
+    x = min(max((fx + dx) * base.width - bw / 2, 0), base.width - bw)
+    y = min(max(fy * base.height - bh / 2, 0), base.height - bh)
+    box = (int(round(x)), int(round(y)),
+           min(base.width, int(round(x + bw))), min(base.height, int(round(y + bh))))
+    return base.crop(box).resize((W, H), Image.BILINEAR)
 
 
 class ClipReader:
@@ -184,6 +214,8 @@ def main():
     ap.add_argument("--from", dest="t_from", type=float, default=0.0)
     ap.add_argument("--to", dest="t_to", type=float, default=None)
     ap.add_argument("--shots", nargs="*", help="only these shot ids (debug)")
+    ap.add_argument("--parallax", type=float, default=0.0,
+                    help="تحريك بعمق 2.5D بقوة 0..1.5 (0 = معطّل)")
     a = ap.parse_args()
 
     tl = json.loads(Path(a.timeline).read_text())
@@ -231,9 +263,13 @@ def main():
     prev_last = None
     last_frame = None
     readers: dict[str, ClipReader] = {}
+    parallax_masks: dict = {}
+    par_mode = max(0.0, a.parallax)
     animated = sum(1 for s in shots if s.clip)
     if animated:
         print(f"  animated shots: {animated}/{len(shots)} (storyboard/clips)", flush=True)
+    if par_mode:
+        print(f"  parallax depth: {par_mode:.2f}", flush=True)
 
     for n in range(n0, n1):
         t = n / FPS
@@ -258,6 +294,13 @@ def main():
             frame = reader.read_next()
             if frame is None:                      # clip shorter than the shot
                 frame = last_frame or Image.new("RGB", (W, H), (20, 16, 24))
+        elif par_mode > 0:
+            pm = parallax_masks.get(cur_shot.id)
+            if pm is None:
+                fx, fy = cur_shot.spec.get("focus", [0.5, 0.5])[:2]
+                pm = depth_mask(fx, fy)
+                parallax_masks[cur_shot.id] = pm
+            frame = cur_shot.frame_parallax(cur_base, t - cur_shot.start, par_mode, pm)
         else:
             frame = cur_shot.frame(cur_base, t - cur_shot.start)
         frame = frame.convert("RGBA")

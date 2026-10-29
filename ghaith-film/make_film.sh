@@ -19,11 +19,13 @@ python3 tools/build.py cards
 echo "③ الجدول الزمني"
 python3 tools/build.py plan | tail -3
 
-echo "④ تحريك اللقطات (اختياري)"
-if [[ "${1:-}" == "--animate" ]]; then
-  python3 tools/parallax.py --all --strength 1.1
+echo "④ التحريك (داخل الرندر — بلا ملفات وسيطة)"
+PARALLAX=0.0
+if [[ "${1:-}" == "--animate" || "${1:-}" == "--parallax" ]]; then
+  PARALLAX=0.9
+  echo "   عمق 2.5D مفعّل (0.9)"
 else
-  echo "   تخطّي (استخدم --animate لتوليد storyboard/clips)"
+  echo "   حركة كاميرا فقط (استخدم --animate لإضافة العمق)"
 fi
 
 echo "⑤ الترجمات + الموسيقى + المزج الصوتي"
@@ -44,7 +46,8 @@ PY
 
 echo "⑥ الرندر النهائي"
 python3 tools/render.py --timeline _work/timeline_full.json --audio _work/mix.wav \
-                        --out deliver/ghaith_alhurras_1080p.mp4 --crf 19
+                        --out deliver/ghaith_alhurras_1080p.mp4 --crf 19 \
+                        --parallax "$PARALLAX"
 
 echo "⑦ المعاينة"
 echo "   python3 tools/serve.py --port 8080   ثم افتح http://localhost:8080/تحميل.html"
