@@ -54,3 +54,15 @@ bundle-extracted/
 
 # حالة المهام المحلية
 trading-desk/jobs/**/status.json
+
+# وسائط وسيطة لإنتاج الفيلم
+ghaith-film/build/
+
+# ===== خط إنتاج الفيلم =====
+# الوسائط الوسيطة والحزم تُبنى بأمر واحد (bash make_film.sh / package.sh)
+ghaith-film/_work/
+ghaith-film/packages/
+# بيانات المشروع (Python) يجب ألا تُستثنى
+!ghaith-film/script/*.py
+!ghaith-film/project/*.py
+ghaith-film/storyboard/clips/
