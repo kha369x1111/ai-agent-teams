@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>كيف تكمل الفيلم؟ — خريطة الطريق</title>
+<link rel="preload" href="docs/Tajawal-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<style>
+  @font-face{font-family:"Tajawal";src:url("docs/Tajawal-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+  @font-face{font-family:"Tajawal";src:url("docs/Tajawal-Medium.ttf") format("truetype");font-weight:500;font-display:swap}
+  @font-face{font-family:"Tajawal";src:url("docs/Tajawal-Bold.ttf") format("truetype");font-weight:700;font-display:swap}
+  :root{--ink:#3b2a1d;--muted:#8a7259;--amber:#d99352;--line:#f0dcc2;--green:#4f9d69;--blue:#4a7fb5}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Tajawal",system-ui,sans-serif;color:var(--ink);line-height:1.9;
+    background:radial-gradient(1100px 520px at 88% -8%,#ffe9cd 0%,transparent 62%),
+               radial-gradient(900px 480px at -5% 8%,#e8f0ff 0%,transparent 55%),
+               linear-gradient(165deg,#fffaf2,#f7e9d6 62%,#f2e0c8)}
+  header{max-width:980px;margin:0 auto;padding:46px 22px 6px;text-align:center}
+  h1{font-size:clamp(26px,4.4vw,44px);margin:0 0 12px;letter-spacing:-.4px}
+  .lead{color:var(--muted);font-size:clamp(15px,2.1vw,18px);max-width:640px;margin:0 auto}
+  main{max-width:980px;margin:0 auto;padding:26px 22px 90px}
+  .hero{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px 28px;
+    box-shadow:0 18px 40px -26px rgba(120,90,50,.6);margin-top:26px}
+  .hero h2{margin:0 0 8px;font-size:20px}
+  .hero p{margin:0 0 14px;color:#6f573f;font-size:15px}
+  pre{background:#2b2130;color:#f7ecdc;border-radius:14px;padding:16px 18px;overflow:auto;
+    direction:ltr;text-align:left;font-size:13.5px;line-height:1.9;margin:0 0 12px}
+  code{background:#f6ead9;padding:2px 7px;border-radius:6px;font-size:13px;direction:ltr;display:inline-block}
+  .ok{display:inline-block;background:#eef8f0;color:#3d7f52;border:1px solid #cbe7d4;
+    border-radius:9px;padding:3px 10px;font-size:13px;font-weight:700}
+  .steps{display:grid;gap:16px;margin-top:34px}
+  .step{background:rgba(255,255,255,.88);border:1px solid var(--line);border-radius:20px;
+    padding:22px 24px;box-shadow:0 12px 30px -24px rgba(120,90,50,.5);display:grid;
+    grid-template-columns:56px 1fr;gap:18px;align-items:start}
+  @media(max-width:640px){.step{grid-template-columns:1fr;gap:10px}}
+  .num{width:52px;height:52px;border-radius:16px;background:linear-gradient(150deg,#f6c98a,#e2a45c);
+    color:#3a2410;display:grid;place-items:center;font-weight:700;font-size:21px;
+    box-shadow:0 6px 16px -8px rgba(180,120,50,.9)}
+  .step h3{margin:0 0 6px;font-size:18px}
+  .step p{margin:0 0 10px;color:#6f573f;font-size:15px}
+  .step ul{margin:0;padding-inline-start:20px;color:#6f573f;font-size:14.5px}
+  .step li{margin-bottom:6px}
+  .tip{background:#fff8ea;border:1px dashed #e6c9a4;border-radius:14px;padding:14px 18px;
+    color:#7a5c3c;font-size:14.5px;margin-top:14px}
+  .rule{background:linear-gradient(150deg,#fff4e2,#ffe9c9);border:2px solid #f0c58f;
+    border-radius:20px;padding:24px 26px;margin-top:34px;text-align:center}
+  .rule h2{margin:0 0 10px;font-size:22px}
+  .rule p{margin:0;font-size:16px;color:#6b4f33}
+  .rule b{color:#a5622a}
+  .tools{width:100%;border-collapse:collapse;margin-top:16px;font-size:14.5px;
+    background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 12px 30px -24px rgba(120,90,50,.5)}
+  .tools th,.tools td{padding:12px 14px;text-align:start;border-bottom:1px solid #f4e7d5}
+  .tools th{background:#fdf3e6;font-weight:700;color:#7c5c3a}
+  .tools tr:last-child td{border-bottom:none}
+  h2.sec{margin:44px 0 6px;font-size:22px}
+  .note{margin-top:20px;color:var(--muted);font-size:14px;text-align:center}
+  a{color:#a5622a}
+</style>
+</head>
+<body>
+<header>
+  <h1>كيف تكمل الفيلم؟ 🎬</h1>
+  <p class="lead">خريطة طريق بسيطة — خطوة خطوة. تذكّر: <b>الفيلم جاهز أصلًا</b>، وما بعده تجميل واختيار.</p>
+</header>
+
+<main>
+  <section class="hero">
+    <h2>☝️ ابدأ من هنا (٣ أوامر فقط)</h2>
+    <p>افتح الطرفية داخل مجلد المشروع، ثم:</p>
+    <pre>python3 tools/doctor.py          <span style="color:#9fd6a8"># ١) هل كل شيء سليم؟</span>
+bash make_film.sh --animate     <span style="color:#9fd6a8"># ٢) اصنع الفيلم (١٠–٢٠ دقيقة)</span>
+python3 tools/serve.py --port 8080   <span style="color:#9fd6a8"># ٣) شاهده في المتصفح</span></pre>
+    <p><span class="ok">✅ موجود عندك الآن</span> الفيلم النهائي: <code>deliver/ghaith_alhurras_1080p.mp4</code>
+      — المدة ٤:٢٢ · ١٠٨٠p · أربعة أصوات.</p>
+  </section>
+
+  <div class="rule">
+    <h2>🔑 القاعدة الذهبية</h2>
+    <p>تريد أن تغيّر شيئًا؟ <b>استبدل الملف بملف جديد يحمل نفس الاسم</b>.<br>
+      صورة مكان صورة، صوت مكان صوت. ثم أعد التشغيل. لا تحتاج لمس أي كود.</p>
+  </div>
+
+  <h2 class="sec">الخطوات بالتفصيل</h2>
+  <div class="steps">
+
+    <div class="step">
+      <div class="num">١</div>
+      <div>
+        <h3>افتح الصندوق 📦</h3>
+        <p>اضغط على الحزمة بالزر الأيمن ← Extract All، وضع الملفات في مجلد اسمه «فيلم غيث».</p>
+        <ul>
+          <li><code>storyboard/raw</code> = الصور</li>
+          <li><code>audio</code> = الأصوات</li>
+          <li><code>script</code> = النصوص</li>
+          <li><code>tools</code> = الأدوات (الفرن)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="num">٢</div>
+      <div>
+        <h3>اطمئن أن كل شيء سليم ✅</h3>
+        <p>شغّل <code>python3 tools/doctor.py</code>. ستظهر علامات ✅ خضراء أو ❌ أمامها الحل.</p>
+        <div class="tip">أشهر مشكلة: مكتبة ناقصة. الحل بسطر واحد:<br>
+          <code>pip install --break-system-packages pillow numpy uharfbuzz imageio-ffmpeg</code></div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="num">٣</div>
+      <div>
+        <h3>شغّل الفرن 🔥</h3>
+        <p><code>bash make_film.sh --animate</code></p>
+        <p>سيصنع: البطاقات ← الترجمات ← خلط الأصوات ← الفيلم. الرندر وحده يأخذ ١٠–٢٠ دقيقة
+          لأنه يرسم ٦٢٨٥ صورة. اتركه واشرب شايًا 🍵</p>
+        <div class="tip">تريد تجربة سريعة؟ اعمل ٣٠ ثانية فقط:<br>
+          <code>python3 tools/render.py --timeline _work/timeline_full.json --audio _work/mix.wav --out deliver/تجربة.mp4 --from 0 --to 30</code></div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="num">٤</div>
+      <div>
+        <h3>شاهد النتيجة 🍿</h3>
+        <p>افتح <code>deliver/ghaith_alhurras_1080p.mp4</code>، أو افتح <code>index.html</code>
+          بنقرة مزدوجة لتشاهد الفيلم مع الفصول وكلمات الأنشودة.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="num">٥</div>
+      <div>
+        <h3>حرّك الشخصيات 🎭</h3>
+        <p>الآن الصور تتحرك بعمق، لكن الوجوه ثابتة. لجعل الطفل يرمش والأب يبتسم:</p>
+        <ul>
+          <li>افتح <b>Luma Dream Machine</b> أو <b>Kling AI</b> أو <b>Runway</b> (بالمتصفح).</li>
+          <li>ارفع الصورة من <code>storyboard/raw</code>.</li>
+          <li>اكتب جملة الحركة (القوالب جاهزة في <code>docs/animation-guide.md</code>).</li>
+          <li>نزّل الفيديو، وأعد تسميته <b>بنفس اسم الصورة</b>، وضعه في <code>storyboard/clips/</code>.</li>
+          <li>أعد التشغيل — وسترى <code>animated shots: 5/38</code> في الطرفية.</li>
+        </ul>
+        <div class="tip">ابدأ بثلاث لقطات: وجه غيث، إصبع نانا، وبطاقة العنوان. الفرق مذهل.</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="num">٦</div>
+      <div>
+        <h3>غيّر الأصوات 🎙️</h3>
+        <p>ثلاثة خيارات: تترك الأصوات الجاهزة، أو تسجّل صوتك بـ<b>Audacity</b>، أو تستخدم
+          <b>ElevenLabs</b> لتحويل النص إلى كلام.</p>
+        <div class="tip">خالد = <code>02_khaled.wav</code> و<code>05_khaled.wav</code> …
+          وسارة = <code>22_sara.wav</code> … ونانا = <code>04_nana.wav</code> …
+          ضع الجديد بنفس الاسم في <code>audio/lines_wav/</code>.</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="num">٧</div>
+      <div>
+        <h3>اجعل الأنشودة أغنية 🎵</h3>
+        <p>الكلمات جاهزة في <code>script/lines_data.py</code> (قسم <code>SONG_LYRICS</code>).
+          الصقها في <b>Suno</b> أو <b>Udio</b>، اختر «أغنية أطفال»، نزّل الناتج وسمّه
+          <code>09_song.mp3</code> في <code>audio/lines/</code>.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="num">٨</div>
+      <div>
+        <h3>عدّل الكلام ✍️</h3>
+        <p>افتح <code>script/lines_data.py</code> بأي مفكرة، غيّر النص بين علامتي التنصيص
+          <code>""</code>، واحفظ. لا تلمس <code>{"id": ...}</code> فهي اسم الملف الصوتي.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="num">٩</div>
+      <div>
+        <h3>شارك الفيلم 📤</h3>
+        <p>الملف الحالي جاهز ليوتيوب. لواتساب استخدم نسخة أخف:</p>
+        <p><code>python3 tools/render.py --out deliver/واتساب.mp4 --crf 27 --parallax 0.9</code></p>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="sec">الأدوات التي تحتاجها 🧰</h2>
+  <table class="tools">
+    <tr><th>الأداة</th><th>لماذا</th><th>السعر</th></tr>
+    <tr><td>Python 3.10+</td><td>يشغّل المشروع</td><td>مجاني</td></tr>
+    <tr><td>ffmpeg (يأتي تلقائيًا)</td><td>يصنع الفيديو</td><td>مجاني</td></tr>
+    <tr><td>Luma / Kling / Runway</td><td>تحريك الصور والوجوه</td><td>مجاني محدود ثم ~$10–30/شهر</td></tr>
+    <tr><td>ElevenLabs</td><td>أصوات عربية واقعية</td><td>مجاني محدود ثم ~$5/شهر</td></tr>
+    <tr><td>Audacity</td><td>تسجيل وتنظيف الصوت</td><td>مجاني</td></tr>
+    <tr><td>Suno / Udio</td><td>الأنشودة والموسيقى</td><td>مجاني محدود</td></tr>
+    <tr><td>CapCut / DaVinci</td><td>قص وتجميع إضافي</td><td>مجاني</td></tr>
+    <tr><td>Blender</td><td>تحريك 3D كامل (للمتقدّمين)</td><td>مجاني</td></tr>
+  </table>
+
+  <div class="rule" style="margin-top:30px;background:linear-gradient(150deg,#eef5ff,#e3edff);border-color:#c3d5f0">
+    <h2>🩺 إن تعطّل شيء</h2>
+    <p>شغّل <code>python3 tools/doctor.py</code> — سيقول لك بالعربية ما الناقص وكيف تصلحه.<br>
+      والدليل المفصّل: <a href="docs/خطوات-الإنتاج.md">docs/خطوات-الإنتاج.md</a></p>
+  </div>
+
+  <p class="note">
+    صفحة المشاهدة: <a href="index.html">index.html</a> ·
+    صفحة التحميل: <a href="تحميل.html">تحميل.html</a> ·
+    دليل التحريك: <a href="docs/animation-guide.md">docs/animation-guide.md</a>
+  </p>
+</main>
+</body>
+</html>
