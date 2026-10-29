@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>دليل تحريك الصور — من صورة ثابتة إلى لقطة حيّة</title>
+<link rel="preload" href="docs/Tajawal-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<style>
+  @font-face{font-family:"Tajawal";src:url("docs/Tajawal-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+  @font-face{font-family:"Tajawal";src:url("docs/Tajawal-Medium.ttf") format("truetype");font-weight:500;font-display:swap}
+  @font-face{font-family:"Tajawal";src:url("docs/Tajawal-Bold.ttf") format("truetype");font-weight:700;font-display:swap}
+  :root{--ink:#3b2a1d;--muted:#8a7259;--amber:#d99352;--line:#f0dcc2}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Tajawal",system-ui,sans-serif;color:var(--ink);line-height:1.95;
+    background:radial-gradient(1100px 520px at 88% -8%,#ffe9cd 0%,transparent 62%),
+               linear-gradient(165deg,#fffaf2,#f7e9d6 62%,#f2e0c8)}
+  header{max-width:940px;margin:0 auto;padding:44px 22px 6px;text-align:center}
+  h1{font-size:clamp(25px,4.2vw,40px);margin:0 0 10px;letter-spacing:-.4px}
+  .lead{color:var(--muted);font-size:clamp(14px,2vw,17px);max-width:660px;margin:0 auto}
+  main{max-width:940px;margin:0 auto;padding:24px 22px 90px}
+  h2{font-size:clamp(19px,2.6vw,24px);margin:42px 0 10px;padding-bottom:8px;border-bottom:2px solid #f3e2cb}
+  h3{font-size:17px;margin:24px 0 6px;color:#7c5c3a}
+  p{font-size:15.5px;color:#5f4a35;margin:0 0 12px}
+  ul,ol{font-size:15.5px;color:#5f4a35;padding-inline-start:24px}
+  li{margin-bottom:7px}
+  code{background:#f6ead9;padding:2px 7px;border-radius:6px;font-size:13px;direction:ltr;display:inline-block}
+  pre{background:#2b2130;color:#f7ecdc;border-radius:14px;padding:16px 18px;overflow:auto;
+    direction:ltr;text-align:left;font-size:13.5px;line-height:1.9;margin:0 0 14px}
+  table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:14.5px;
+    background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 12px 30px -26px rgba(120,90,50,.6)}
+  th,td{padding:11px 13px;text-align:start;border-bottom:1px solid #f4e7d5;vertical-align:top}
+  th{background:#fdf3e6;color:#7c5c3a;font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 22px;
+    box-shadow:0 14px 34px -28px rgba(120,90,50,.6);margin:18px 0}
+  .tip{background:#fff8ea;border:1px dashed #e6c9a4;border-radius:14px;padding:14px 18px;
+    color:#7a5c3c;font-size:14.5px;margin:14px 0}
+  .warn{background:#fff2f0;border:1px dashed #eec4bd;border-radius:14px;padding:14px 18px;
+    color:#8b4a3d;font-size:14.5px;margin:14px 0}
+  .where{background:#eef5ff;border:1px solid #ccdcf5;border-radius:14px;padding:16px 20px;
+    color:#3c5e8f;font-size:14.5px;margin:16px 0}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0}
+  @media(max-width:760px){.grid3{grid-template-columns:1fr}}
+  .mini{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+  .mini b{display:block;margin-bottom:6px;color:#7c5c3a}
+  .mini p{margin:0;font-size:14px}
+  a{color:#a5622a}
+  footer{max-width:940px;margin:0 auto;padding:0 22px 60px;color:#9a8267;font-size:13.5px;text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <h1>دليل تحريك الصور 🎭</h1>
+  <p class="lead">من صورة ثابتة إلى لقطة حيّة — ثلاث طرق مرتّبة من الأسهل إلى الأقوى،
+    كلها مدعومة بكود جاهز في مشروعك.</p>
+</header>
+
+<main>
+
+  <div class="where">
+    <b>📍 هذا الملف هو نفسه</b> <code>docs/animation-guide.md</code> — لكن بنسخة تُفتح بنقرة
+    مزدوجة. ملفات <code>.md</code> لا تفتح عندك على ويندوز، لذلك هذه هي الطريقة الأسهل.<br>
+    (النسخة النصية موجودة أيضًا في المسار <code>docs/animation-guide.md</code> داخل المجلد.)
+  </div>
+
+  <h2>الطرق الثلاث في لمحة</h2>
+  <table>
+    <tr><th>الطريقة</th><th>ما تحصل عليه</th><th>الوقت</th><th>الأمر / الأداة</th></tr>
+    <tr>
+      <td><b>١. حركة كاميرا</b><br><small>موجودة أصلًا</small></td>
+      <td>زوم / بان / تلت على الصورة</td><td>فوري</td>
+      <td><code>tools/render.py</code></td>
+    </tr>
+    <tr>
+      <td><b>٢. عمق 2.5D</b><br><small>مفعّل الآن</small></td>
+      <td>طبقتان تتحركان بسرعتين = إحساس عمق</td><td>بلا ملفات وسيطة</td>
+      <td><code>--parallax 0.9</code></td>
+    </tr>
+    <tr>
+      <td><b>٢ب. عمق + غبار وإضاءة</b></td>
+      <td>نفس العمق + نبض ضوء وذرّات متطايرة</td><td>~٤٠ ثانية/لقطة</td>
+      <td><code>tools/parallax.py</code></td>
+    </tr>
+    <tr>
+      <td><b>٣. صورة ← فيديو</b><br><small>الأقوى</small></td>
+      <td>الوجوه نفسها تتحرك وتتكلّم</td><td>يعتمد على الأداة</td>
+      <td>Luma / Kling / Runway</td>
+    </tr>
+  </table>
+
+  <h2>١) حركة الكاميرا — جاهزة الآن</h2>
+  <p>كل لقطة في <code>project/shots_data.py</code> لها سطر اسمه <code>move</code>:</p>
+  <pre>{"id": "S01", "img": "s01_livingroom", "move": "push_in", "focus": [0.42, 0.52]}</pre>
+  <p>الحركات المتاحة (في <code>tools/render.py</code> داخل <code>MOVES</code>):</p>
+  <div class="grid3">
+    <div class="mini"><b>push_in</b><p>اقتراب بطيء من الوجه</p></div>
+    <div class="mini"><b>pull_out</b><p>ابتعاد يكشف المكان</p></div>
+    <div class="mini"><b>close_push</b><p>اقتراب قوي للتفاصيل</p></div>
+    <div class="mini"><b>pan_right / pan_left</b><p>مسح أفقي للمشهد</p></div>
+    <div class="mini"><b>tilt_up</b><p>صعود عمودي</p></div>
+    <div class="mini"><b>diag</b><p>حركة قطرية ناعمة</p></div>
+  </div>
+  <div class="tip">غيّر <code>move</code> أو <code>focus</code> ثم أعد الرندر — أسرع طريقة لإحساس مختلف.</div>
+
+  <h2>٢) التحريك بعمق 2.5D</h2>
+
+  <h3>الطريقة الأسرع — داخل الرندر نفسه</h3>
+  <pre>python3 tools/render.py --timeline _work/timeline_full.json --audio _work/mix.wav \
+        --out deliver/ghaith_alhurras_1080p.mp4 --parallax 0.9</pre>
+  <p>أو ببساطة:</p>
+  <pre>bash make_film.sh --animate</pre>
+  <p><code>--parallax</code> تقبل من ٠ (معطّل) إلى ١.٥. المحرك يبني قناع عمق ناعمًا حول
+    نقطة التركيز، ثم يركّب طبقتين لكل إطار: خلفية أبطأ + مقدمة أسرع. النتيجة: إحساس عمق
+    حقيقي بلا أي ملفات وسيطة.</p>
+
+  <h3>الطريقة الثانية — مقاطع محسوبة مسبقًا (مع غبار وحبيبات)</h3>
+  <pre>python3 tools/parallax.py --shots S01 S06 S21 --strength 1.0
+# أو كل اللقطات
+python3 tools/parallax.py --all --strength 1.2</pre>
+  <p>تقرأ اللقطة، تبني قناعًا بيضاويًا حول <code>focus</code>، تحرّك نسختين بسرعتين
+    متعاكستين، تدمجهما، وتضيف: نبض إضاءة + غبار متطاير + حبيبات فيلم + خفوت أطراف.
+    الناتج في <code>storyboard/clips/&lt;اسم_الصورة&gt;.mp4</code> ويلتقطه الرندر تلقائيًا.</p>
+
+  <h2>٣) تحريك الشخصيات فعليًا (صورة ← فيديو) ⭐</h2>
+  <p>هذه هي الطريقة التي تجعل غيث يفتح عينيه، ونانا تدمع عيناها. الصور جاهزة بدقة
+    1672×941 وبأسلوب متسق — مثالية كإطار أول.</p>
+
+  <table>
+    <tr><th>الأداة</th><th>السهولة</th><th>ملاحظة</th></tr>
+    <tr><td>Luma Dream Machine</td><td>⭐⭐⭐ سهلة جدًا</td><td>صورة + جملة ← ٥ ثوانٍ متحركة</td></tr>
+    <tr><td>Kling AI</td><td>⭐⭐ متوسطة</td><td>الأفضل في حركة الوجوه والتعبيرات</td></tr>
+    <tr><td>Runway Gen-4</td><td>⭐⭐ متوسطة</td><td>خيارات كاميرا دقيقة</td></tr>
+    <tr><td>Pika</td><td>⭐⭐⭐ سهلة</td><td>حركات صغيرة ولطيفة</td></tr>
+  </table>
+
+  <h3>الخطوات (٤ فقط)</h3>
+  <ol>
+    <li><b>ارفع الصورة</b> من <code>storyboard/raw/</code> — مثلًا <code>s17_baby_closeup.jpg</code>.</li>
+    <li><b>اكتب جملة الحركة</b> (القالب أسفل).</li>
+    <li><b>نزّل الفيديو</b> وأعد تسميته <b>بنفس اسم الصورة</b>.</li>
+    <li><b>ضعه في</b> <code>storyboard/clips/</code> ثم أعد التشغيل.</li>
+  </ol>
+
+  <h3>قالب البرومبت</h3>
+  <pre>Animate this Pixar-style 3D still with subtle, warm family-film motion.
+Camera: slow gentle push-in. Keep faces, clothes and lighting identical.
+{هنا الحركة}
+No morphing, no new characters, no text. 4 seconds, cinematic.</pre>
+
+  <h3>أمثلة جاهزة (ضعها مكان {هنا الحركة})</h3>
+  <table>
+    <tr><th>اللقطة</th><th>نص الحركة</th></tr>
+    <tr><td><code>s01_livingroom</code></td>
+      <td>The father twists the screwdriver; the girl's measuring tape sways; the little one tucks the teddy in; curtains breathe in the breeze.</td></tr>
+    <tr><td><code>s02_gigi_dad</code></td>
+      <td>Gigi raises the teddy slightly and blinks; the father's smile widens; dust motes drift through the light.</td></tr>
+    <tr><td><code>s03_nana_worried</code></td>
+      <td>Nana hugs the blanket tighter, swallows, blinks twice; a slow push-in on her eyes.</td></tr>
+    <tr><td><code>s04_candle_talk</code></td>
+      <td>The three candles flicker; the father's eyebrow lifts; Nana's eyes glisten as she smiles.</td></tr>
+    <tr><td><code>s17_baby_closeup</code></td>
+      <td>The newborn's eyes open slowly and his tiny fingers curl around the sister's finger.</td></tr>
+    <tr><td><code>s19_nana_pinky</code></td>
+      <td>Nana's fingertip trembles slightly; a single tear forms and her smile grows.</td></tr>
+    <tr><td><code>s22_song_wide</code></td>
+      <td>The family sways gently together; paper stars drift; the window light pulses warmly.</td></tr>
+  </table>
+
+  <div class="warn">
+    <b>الـ Negative prompt (ضعه في خانة «ما لا تريده»):</b><br>
+    <code>warping faces, extra fingers, flicker, jitter, color shift, camera shake</code>
+  </div>
+
+  <h3>كيف تُدخل الناتج؟</h3>
+  <ol>
+    <li>أعد تسمية الفيديو بنفس اسم الصورة:
+      <code>storyboard/clips/s17_baby_closeup.mp4</code></li>
+    <li>أعد بناء الفيلم:
+      <pre>python3 tools/render.py --timeline _work/timeline_full.json \
+                        --audio _work/mix.wav \
+                        --out deliver/ghaith_alhurras_1080p.mp4 --parallax 0.9</pre></li>
+    <li>راقب الطرفية — سيظهر: <code>animated shots: 5/38 (storyboard/clips)</code></li>
+  </ol>
+
+  <div class="box">
+    <b>أولوية المحرك:</b> مقطع جاهز في <code>storyboard/clips</code> ← حركة عمق/parallax ← الصورة الثابتة.
+    والمقاطع تُقصّ أو تُمَدّ لتطابق مدة اللقطة، وتُضاف الترجمة والصوت فوقها.
+  </div>
+
+  <h2>٤) تحريك ثلاثي الأبعاد كامل (Blender)</h2>
+  <ol>
+    <li>صدّر الصورة كمرجع خلفي: <code>Add ▸ Image ▸ Reference</code>.</li>
+    <li>ابنِ الشخصية بكرات (metaballs) أو استخدم <b>MB-Lab / Human Generator</b>.</li>
+    <li>استخدم <b>Rigify</b> للهيكل و<b>Mixamo</b> للحركة الجاهزة (مجاني).</li>
+    <li>صدّر MP4 إلى <code>storyboard/clips/</code> بنفس الأسماء، وأعد الرندر.</li>
+  </ol>
+  <div class="warn">
+    تنبيه واقعي: تحريك ٤ دقائق كاملة بإطارات يدوية يحتاج فريقًا وأسابيع. للمشاريع الفردية
+    المسار الموصى به هو الجمع بين الطريقة (٢) و(٣).
+  </div>
+
+  <h2>قائمة تحقّق سريعة ✅</h2>
+  <ul>
+    <li>هل اللقطة مذكورة في <code>project/shots_data.py</code> ولها <code>img</code>؟</li>
+    <li>هل الصورة موجودة في <code>storyboard/raw/</code>؟</li>
+    <li>هل ملف الصوت موجود في <code>audio/lines/</code> أو <code>audio/lines_wav/</code>؟</li>
+    <li>شغّل <code>python3 tools/build.py plan</code> — يجب ألا يظهر أي سطر في
+      <code>MISSING AUDIO LINES</code>.</li>
+    <li>بعد إضافة مقاطع: راقب سطر <code>animated shots: N/38</code>.</li>
+  </ul>
+
+  <div class="tip">
+    <b>تعطّل شيء؟</b> شغّل <code>python3 tools/doctor.py</code> — يفحص كل شيء ويخبرك بالحل بالعربية.
+  </div>
+
+</main>
+
+<footer>
+  <a href="خطوات-الإنتاج.html">🗺️ خريطة الطريق الكاملة</a> ·
+  <a href="تحميل.html">⬇️ التحميل</a> ·
+  <a href="index.html">🎬 صفحة المشاهدة</a>
+</footer>
+</body>
+</html>
