@@ -66,3 +66,7 @@ ghaith-film/packages/
 !ghaith-film/script/*.py
 !ghaith-film/project/*.py
 ghaith-film/storyboard/clips/
+
+# ===== خط إنتاج «الألف» =====
+alif-film/_work/
+alif-film/.tmp/
