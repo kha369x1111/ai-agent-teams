@@ -66,3 +66,8 @@ ghaith-film/packages/
 !ghaith-film/script/*.py
 !ghaith-film/project/*.py
 ghaith-film/storyboard/clips/
+
+# ===== خط إنتاج ريلز حرف الباء (أكاديمية مفتاح الأسرار السبعة) =====
+baa-reel/_work/
+baa-reel/packages/
+!baa-reel/project/*.py
