@@ -27,13 +27,14 @@ zip -q -r "$OUT/ghaith-film-light.zip" \
   تحميل.html خطوات-الإنتاج.html دليل-التحريك.html تحريك-3D.html \
   افتح-دليل-التحريك.bat افتح-دليل-التحريك.command افتح-تحريك-3D.bat افتح-تحريك-3D.command \
   tools script project docs assets storyboard/raw audio \
-  -x '**/__pycache__/*' -x '*.pyc'
+  -x '**/__pycache__/*' -x '*.pyc' -x 'storyboard/raw/*.png'
 
 if [ "${WITH_FILM:-0}" = "1" ]; then
   echo "→ حزمة كاملة (مع الفيلم)"
   rm -f "$OUT/ghaith-film-full.zip"
   zip -q -r "$OUT/ghaith-film-full.zip" . \
-    -x '_work/*' -x 'packages/*' -x '**/__pycache__/*' -x '*.pyc' -x '.DS_Store'
+    -x '_work/*' -x 'packages/*' -x '**/__pycache__/*' -x '*.pyc' -x '.DS_Store' \
+    -x 'storyboard/raw/*.png' -x 'storyboard/clips/*'
 else
   echo "  (لتضمين الفيلم: WITH_FILM=1 bash package.sh)"
 fi

@@ -139,6 +139,8 @@ class ClipReader:
         self.proc = None
         self.index = -1
         self.size = W * H * 3
+        self._last = None
+        self._spawn()
 
     def _spawn(self):
         self.close()
@@ -162,7 +164,9 @@ class ClipReader:
         return self._last
 
     def read_next(self) -> Image.Image | None:
-        buf = self.proc.stdout.read(self.size) if self.proc else None
+        if self.proc is None:
+            self._spawn()
+        buf = self.proc.stdout.read(self.size)
         if not buf or len(buf) < self.size:
             return None
         self.index += 1
@@ -286,6 +290,11 @@ def main():
             prev_last = last_frame
             cur_shot = shot
             cur_base = None if shot.clip else base_of(shot, fallback)
+            # أغلق قارئ المقطع السابق: يحافظ على الذاكرة منخفضة (كل قارئ = ffmpeg حي)
+            if prev_shot is not None:
+                old_reader = readers.pop(prev_shot.id, None)
+                if old_reader is not None:
+                    old_reader.close()
 
         if cur_shot.clip is not None:
             reader = readers.get(cur_shot.id)
@@ -326,7 +335,13 @@ def main():
                 frame = draw_caption(frame, c, max(0.0, alpha))
 
         arr = np.asarray(frame.convert("RGB"), dtype=np.uint8)
-        proc.stdin.write(arr.tobytes())
+        try:
+            proc.stdin.write(arr.tobytes())
+        except BrokenPipeError:
+            print("!! ffmpeg توقّف فجأة (نفاد ذاكرة؟) — أعد المحاولة بـ --from "
+                  f"{t:.0f}", flush=True)
+            proc.wait()
+            sys.exit(1)
 
         idx += 1
         if idx % 240 == 0:

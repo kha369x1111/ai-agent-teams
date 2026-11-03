@@ -238,7 +238,10 @@ class Camera3D:
 # 3) توليد المقاطع
 # --------------------------------------------------------------------------- #
 def load_durations() -> dict:
-    """مدّة كل صورة = مجموع لقطاتها (المقطع الواحد يُقصّ من بدايته لكل لقطة)."""
+    """مدّة كل صورة = أطول لقطة تستخدمها (+ هامش).
+
+    كل لقطة تبدأ من أول المقطع، لذلك لا نحتاج أكثر من أطول لقطة تستخدم الصورة.
+    """
     for p in (ROOT / "_work/timeline_full.json", ROOT / "_work/timeline_plan.json"):
         if not p.exists():
             continue
@@ -249,7 +252,7 @@ def load_durations() -> dict:
         durs: dict = {}
         for s in data.get("shots", []):
             if s.get("img") and "dur" in s:
-                durs[s["img"]] = durs.get(s["img"], 0.0) + float(s["dur"])
+                durs[s["img"]] = max(durs.get(s["img"], 0.0), float(s["dur"]))
         if durs:
             return {k: v + 0.6 for k, v in durs.items()}
     return {}

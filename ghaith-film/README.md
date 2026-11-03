@@ -5,7 +5,7 @@
 
 هذا المجلد مشروع إنتاج كامل: السيناريو، دفتر الشخصيات، دفتر اللقطات، حزمة برومبتات الصور،
 التعليق الصوتي العربي، الموسيقى والأنشودة، الترجمات العربية، وكل أدوات التركيب التي تُنتج
-ملف `out/ghaith_alhurras_1080p.mp4` بأمر واحد.
+ملف `deliver/ghaith_alhurras_1080p_3d.mp4` بأمر واحد.
 
 ---
 
@@ -13,8 +13,9 @@
 
 | الملف | الوصف |
 |---|---|
-| `out/ghaith_alhurras_1080p.mp4` | الفيلم الكامل 1080p/24 · H.264 · AAC مع الترجمات والصوت |
-| `out/poster.jpg` | صورة الغلاف |
+| `deliver/ghaith_alhurras_1080p_3d.mp4` | **الفيلم الكامل بعمق 3D** — 1080p/24 · H.264 · AAC · ٤:٢٢ |
+| `deliver/ghaith_alhurras_1080p.mp4` | النسخة المسطّحة السابقة (حركة كاميرا 2.5D فقط) |
+| `deliver/poster.jpg` | صورة الغلاف |
 | `index.html` | صفحة عرض تفاعلية: مشغّل + فصول + حوار قابل للنقر + كلمات الأنشودة |
 | `docs/shotlist.md` | دفتر اللقطات + الحوار الكامل بالتوقيت |
 | `docs/character-bible.md` | دستور الشخصيات (المظهر، الصوت، الدافع الدرامي) |
@@ -83,10 +84,12 @@ audio/lines/*.mp3 ─┘        │                        │
 |---|---|
 | تحميل المشروع (٢٥ م.ب) | `packages/ghaith-film-light.zip` أو صفحة `تحميل.html` |
 | تحميل الكود فقط (٦٩٦ ك.ب) | `packages/ghaith-film-code.zip` |
-| تحميل الفيلم | `deliver/ghaith_alhurras_1080p.mp4` |
+| تحميل الفيلم (3D) | `deliver/ghaith_alhurras_1080p_3d.mp4` |
+| تحميل النسخة المسطّحة | `deliver/ghaith_alhurras_1080p.mp4` |
 | إعادة بناء الفيلم بأمر واحد | `bash make_film.sh` (أو `--animate` مع التحريك) |
-| تحريك الصور | `python3 tools/parallax.py --all` ثم أعد الرندر |
-| دليل التحريك الكامل | `docs/animation-guide.md` |
+| تحريك الصور 3D (الأسهل) | `python3 tools/depth3d.py --all` ثم `bash make_film.sh` |
+| تحريك الصور (2.5D داخل الرندر) | `bash make_film.sh --animate` |
+| دليل التحريك الكامل | `تحريك-3D.html` (أو `docs/animation-guide.md`) |
 
 > الصور محفوظة بصيغة JPEG (‏٩.٩ م.ب بدل ٨٦ م.ب) ويقبلها المحرك تلقائيًا
 > بجانب PNG. المقاطع المتحركة تُوضع في `storyboard/clips/<اسم_الصورة>.mp4`
