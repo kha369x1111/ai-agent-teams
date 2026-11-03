@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>تحريك الشخصيات — من صورة ثابتة إلى شخص يتكلم</title>
+<style>
+  @font-face{font-family:"Tajawal";src:url("docs/Tajawal-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+  @font-face{font-family:"Tajawal";src:url("docs/Tajawal-Bold.ttf") format("truetype");font-weight:700;font-display:swap}
+  :root{--ink:#2f2430;--muted:#7d6b78;--line:#e9d9c8}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Tajawal",system-ui,sans-serif;color:var(--ink);line-height:1.9;
+    background:radial-gradient(900px 460px at 85% -10%,#ffe4d0,transparent 60%),linear-gradient(160deg,#fffaf5,#f6ece3 70%)}
+  header{max-width:900px;margin:0 auto;padding:42px 22px 4px;text-align:center}
+  h1{font-size:clamp(24px,4vw,38px);margin:0 0 8px}
+  .lead{color:var(--muted);font-size:16px;max-width:640px;margin:0 auto}
+  main{max-width:900px;margin:0 auto;padding:24px 22px 80px}
+  h2{font-size:clamp(18px,2.5vw,23px);margin:36px 0 10px;padding-bottom:7px;border-bottom:2px solid #f1e2d3}
+  p,li{font-size:15.5px;color:#544450}
+  code{background:#f7ece1;padding:2px 7px;border-radius:6px;font-size:13px;direction:ltr;display:inline-block}
+  pre{background:#2b2230;color:#fbf0e6;border-radius:14px;padding:15px 17px;overflow:auto;
+    direction:ltr;text-align:left;font-size:13.5px;line-height:1.85;margin:0 0 14px}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.5px;background:#fff;border-radius:14px;overflow:hidden}
+  th,td{padding:10px 13px;text-align:start;border-bottom:1px solid #f4e7db}
+  th{background:#fdf2e8;color:#7c5c3a}
+  .box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin:18px 0;
+    box-shadow:0 14px 34px -30px rgba(120,90,50,.7)}
+  .best{background:#eefaf1;border:1px solid #c7e6ce;border-radius:14px;padding:14px 18px;color:#2c6841;font-size:14.5px;margin:14px 0}
+  .warn{background:#fff3f0;border:1px dashed #efc6bd;border-radius:14px;padding:14px 18px;color:#8b4a3d;font-size:14.5px;margin:14px 0}
+  .tip{background:#fff8ec;border:1px dashed #e8cea8;border-radius:14px;padding:14px 18px;color:#7a5c3c;font-size:14.5px;margin:14px 0}
+  .where{background:#eef5ff;border:1px solid #ccdcf5;border-radius:14px;padding:16px 20px;color:#3c5e8f;font-size:14.5px;margin:16px 0}
+  a{color:#a5622a}
+  .pair{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+  @media(max-width:700px){.pair{grid-template-columns:1fr}}
+  .pair figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .pair img{width:100%;display:block}
+  .pair figcaption{font-size:13px;color:#8a7264;padding:8px 10px}
+  footer{max-width:900px;margin:0 auto;padding:0 22px 60px;color:#9a8674;font-size:13.5px;text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <h1>تحريك الشخصيات فعليًا 🗣️</h1>
+  <p class="lead">الفرق بين «تحريك الكاميرا» و«تحريك الشخصية» — ولماذا الطريقة الثانية تحتاج خطوة إضافية.</p>
+</header>
+
+<main>
+
+  <div class="where">
+    <b>ملاحظتك كانت صحيحة تمامًا.</b> النسخة السابقة حرّكت <b>الكاميرا</b> داخل الصورة فقط؛
+    الأشخاص أنفسهم بقوا ثابتين. هذه الصفحة تشرح — وتُنفّذ — تحريك الشخصيات: فم يتحرك مع الكلام،
+    رأس يتنفّس، وجسد يتحرك.
+  </div>
+
+  <h2>الحقيقة التي لا مفرّ منها ⚠️</h2>
+  <p>صورة واحدة ثابتة لا تحتوي معلومة «ماذا يوجد خلف الشفة». لذلك أي محاولة لفتح الفم برمجيًا
+    على صورة واحدة تنتهي بتشويه (شفاه تُمدّ، أو بقع داكنة مكان الأنف). جرّبنا ذلك وفشل — بالصور.</p>
+  <div class="best">
+    <b>الحل الصحيح:</b> نحتاج <b>إطارين</b> لنفس الشخص من نفس الزاوية:
+    إطار <b>A</b> (فم مغلق) وإطار <b>B</b> (فم مفتوح). ثم ننتقل بينهما بحسب صوت الكلام.
+    هذا ما تفعله أدوات «الصورة المتكلمة» الاحترافية في العالم.
+  </div>
+
+  <h2>الخطوات الأربع (منفّذة في مشروعك) ✅</h2>
+
+  <h3>١) إطار B لكل شخصية</h3>
+  <p>نولّد نسخة ثانية من كل صورة يكون فيها الفم مفتوحًا مع الحفاظ على نفس الوجه والإضاءة.
+    الاسم والقاعدة: <code>_work/keys/&lt;اسم-الصورة&gt;_B.png</code></p>
+  <pre>_work/keys/s03_nana_worried_B.png</pre>
+
+  <h3>٢) قناع الكلام تلقائيًا</h3>
+  <p>الأداة تقارن A و B وتحدّد منطقة الفم تلقائيًا (وهي أكبر منطقة «صارت أغمق» في B لأن الفم
+    انفتح)، ثم تصنع قناعًا ناعمًا حولها. بلا أي تدخل منك.</p>
+
+  <h3>٣) قراءة صوت كل سطر</h3>
+  <p>لكل لقطة صوتها في <code>audio/lines_wav/</code> أو <code>audio/lines/</code>. الأداة تقيس
+    شدّة الصوت كل ١٠ ملّي ثانية، ثم تفتح الفم بمقدار الصوت — الفم يقفل عند الصمت.</p>
+
+  <h3>٤) الرندر</h3>
+  <pre>python3 tools/talk_char.py --all --strength 0.5 --talk 2.2
+bash make_film.sh</pre>
+  <p>أو بأمر واحد:</p>
+  <pre>bash make_film.sh --live</pre>
+  <p>الرندر يبحث عن المقاطع في <code>storyboard/clips/</code> ويستخدمها تلقائيًا.</p>
+
+  <h2>ماذا يتحرك في كل إطار؟ 🎬</h2>
+  <table>
+    <tr><th>الحركة</th><th>كيف تُنفّذ</th><th>الملاحظة</th></tr>
+    <tr>
+      <td><b>الفم يتكلم</b></td>
+      <td>مزج A↔B بقناع الفم، بمقياس من صوت السطر</td>
+      <td>يحتاج إطار B — وهو المطلوب توليده</td>
+    </tr>
+    <tr>
+      <td><b>تنفّس</b></td>
+      <td>تكبير/تصغير ٠.٧٪ كل ٤.٤ ثانية</td>
+      <td>يعمل على كل صورة، بلا إطار B</td>
+    </tr>
+    <tr>
+      <td><b>إيماءة رأس</b></td>
+      <td>هبوط ١–٣ بكسل مرتبط بشدّة الكلام</td>
+      <td>يتحرّك فعليًا مع نبرة الصوت</td>
+    </tr>
+    <tr>
+      <td><b>حركة كاميرا</b></td>
+      <td>طبقات العمق من <code>depth3d.py</code></td>
+      <td>هذه وحدها ما كانت في النسخة السابقة</td>
+    </tr>
+  </table>
+
+  <h2>الملفات الناتجة</h2>
+  <table>
+    <tr><th>الملف</th><th>ما فيه</th></tr>
+    <tr><td><code>tools/talk_char.py</code></td><td>المحرك: قناع + صوت + مزج</td></tr>
+    <tr><td><code>tools/depth3d.py</code></td><td>حركة الكاميرا ثلاثية الأبعاد</td></tr>
+    <tr><td><code>_work/keys/*_B.png</code></td><td>إطارات الفم المفتوح</td></tr>
+    <tr><td><code>storyboard/clips/*.mp4</code></td><td>المقاطع النهائية</td></tr>
+    <tr><td><code>deliver/ghaith_alhurras_1080p_live.mp4</code></td><td>الفيلم النهائي</td></tr>
+  </table>
+
+  <h2>لماذا لا نستخدم Luma أو Kling مباشرة؟ 🌐</h2>
+  <p>لأنها أقوى بالفعل: تعطيك رأسًا يتحرك كاملًا وشعرًا يهتز ويدين تتشابك. لكنها تحتاج إنترنت
+    وحسابًا، وحدودًا مجانية يومية. إن أردت أفضل نتيجة:</p>
+  <ol>
+    <li>ارفع الصورة إلى Kling أو Luma.</li>
+    <li>اكتب: <code>she speaks softly, mouth moves naturally, slight head nod, no camera shake, 5s</code></li>
+    <li>نزّل الفيديو وسمّه <code>storyboard/clips/&lt;اسم-الصورة&gt;.mp4</code></li>
+    <li>أعد الرندر: <code>bash make_film.sh</code> — وسيُستخدم فورًا.</li>
+  </ol>
+
+  <div class="tip">
+    <b>الترتيب الموصى به:</b> الطريقة المحلية (هذه) لكل اللقطات ← ثم Luma/Kling للقطات
+    الوجوه القريبة فقط (٤–٦ لقطات) ← النتيجة تشبه الأفلام القصيرة الاحترافية.
+  </div>
+
+  <div class="warn">
+    <b>ملاحظة صدق:</b> الفم يتحرك بحركة ناعمة بين إطارين، وليس بأشكال حروف حقيقية. تشعر بالكلام،
+    لكنها ليست مزامنة دقيقة لحرف الباء أو الميم. المزامنة الحقيقية تحتاج فيديو مُولّدًا بالكامل.
+  </div>
+
+</main>
+<footer>
+  غيث الحرّاس · <a href="index.html">صفحة العرض</a> ·
+  <a href="تحريك-3D.html">تحريك الكاميرا 3D</a> ·
+  <a href="تنزيل-الفيلم.html">تنزيل</a>
+</footer>
+</body>
+</html>

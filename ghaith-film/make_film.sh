@@ -19,6 +19,13 @@ python3 tools/build.py cards
 echo "③ الجدول الزمني"
 python3 tools/build.py plan | tail -3
 
+echo "③ب كلام الشخصيات + حركة كاميرا (مقاطع جاهزة في storyboard/clips)"
+if [[ "${1:-}" == "--live" || "${1:-}" == "--animate" ]]; then
+  python3 tools/talk_char.py --all --strength 0.5 --talk 2.2 || true
+else
+  echo "   (لتوليد مقاطع الكلام: bash make_film.sh --live)"
+fi
+
 echo "④ التحريك (داخل الرندر — بلا ملفات وسيطة)"
 PARALLAX=0.0
 if [[ "${1:-}" == "--animate" || "${1:-}" == "--parallax" ]]; then

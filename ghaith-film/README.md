@@ -13,7 +13,8 @@
 
 | الملف | الوصف |
 |---|---|
-| `deliver/ghaith_alhurras_1080p_3d.mp4` | **الفيلم الكامل بعمق 3D** — 1080p/24 · H.264 · AAC · ٤:٢٢ |
+| `deliver/ghaith_alhurras_1080p_live.mp4` | **الفيلم النهائي: شخصيات تتكلم + كاميرا 3D** — ٤:٢٢ · 51 MB |
+| `deliver/ghaith_alhurras_1080p_3d.mp4` | نسخة حركة الكاميرا فقط |
 | `deliver/ghaith_alhurras_1080p.mp4` | النسخة المسطّحة السابقة (حركة كاميرا 2.5D فقط) |
 | `deliver/poster.jpg` | صورة الغلاف |
 | `index.html` | صفحة عرض تفاعلية: مشغّل + فصول + حوار قابل للنقر + كلمات الأنشودة |
@@ -84,10 +85,11 @@ audio/lines/*.mp3 ─┘        │                        │
 |---|---|
 | تحميل المشروع (٢٥ م.ب) | `packages/ghaith-film-light.zip` أو صفحة `تحميل.html` |
 | تحميل الكود فقط (٦٩٦ ك.ب) | `packages/ghaith-film-code.zip` |
-| تحميل الفيلم (3D) | **`تنزيل-الفيلم.html`** أو `deliver/ghaith_alhurras_1080p_3d.mp4` |
+| تحميل الفيلم (كلام + 3D) | **`تنزيل-الفيلم.html`** أو `deliver/ghaith_alhurras_1080p_live.mp4` |
 | تحميل النسخة المسطّحة | `deliver/ghaith_alhurras_1080p.mp4` |
 | إعادة بناء الفيلم بأمر واحد | `bash make_film.sh` (أو `--animate` مع التحريك) |
-| تحريك الصور 3D (الأسهل) | `python3 tools/depth3d.py --all` ثم `bash make_film.sh` |
+| تحريك الشخصيات (كلام) | `python3 tools/talk_char.py --all` ثم `bash make_film.sh` |
+| تحريك الكاميرا 3D | `python3 tools/depth3d.py --all` |
 | تحريك الصور (2.5D داخل الرندر) | `bash make_film.sh --animate` |
 | دليل التحريك الكامل | `تحريك-3D.html` (أو `docs/animation-guide.md`) |
 
@@ -128,7 +130,8 @@ python3 tools/serve.py --port 8080   # مشاهدة في المتصفح
 |---|---|---|
 | 🗺️ خطوات إنتاج الفيلم | `خطوات-الإنتاج.html` | `docs/خطوات-الإنتاج.md` |
 | 🎭 تحريك الصور | **`دليل-التحريك.html`** | `docs/animation-guide.md` |
-| 🧊 تحريك 3D (الأسهل) | **`تحريك-3D.html`** | `tools/depth3d.py` |
+| 🧊 تحريك الكاميرا 3D | **`تحريك-3D.html`** | `tools/depth3d.py` |
+| 🗣️ تحريك الشخصيات (كلام) | **`تحريك-الشخصيات.html`** | `tools/talk_char.py` |
 | ⬇️ صفحة التحميل | `تحميل.html` | — |
 | 🎬 صفحة المشاهدة | `index.html` | — |
 

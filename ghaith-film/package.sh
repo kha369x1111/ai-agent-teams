@@ -15,9 +15,10 @@ echo "→ حزمة الكود"
 rm -f "$OUT/ghaith-film-code.zip"
 zip -q -r "$OUT/ghaith-film-code.zip" \
   README.md index.html package.sh make_film.sh \
-  تحميل.html تنزيل-الفيلم.html خطوات-الإنتاج.html دليل-التحريك.html تحريك-3D.html \
+  تحميل.html تنزيل-الفيلم.html خطوات-الإنتاج.html دليل-التحريك.html تحريك-3D.html تحريك-الشخصيات.html \
   افتح-دليل-التحريك.bat افتح-دليل-التحريك.command افتح-تحريك-3D.bat افتح-تحريك-3D.command \
   افتح-تنزيل-الفيلم.bat افتح-تنزيل-الفيلم.command \
+  افتح-تحريك-الشخصيات.bat افتح-تحريك-الشخصيات.command \
   tools script project docs assets \
   -x '**/__pycache__/*' -x '*.pyc'
 
@@ -25,10 +26,11 @@ echo "→ حزمة خفيفة"
 rm -f "$OUT/ghaith-film-light.zip"
 zip -q -r "$OUT/ghaith-film-light.zip" \
   README.md index.html package.sh make_film.sh \
-  تحميل.html تنزيل-الفيلم.html خطوات-الإنتاج.html دليل-التحريك.html تحريك-3D.html \
+  تحميل.html تنزيل-الفيلم.html خطوات-الإنتاج.html دليل-التحريك.html تحريك-3D.html تحريك-الشخصيات.html \
   افتح-دليل-التحريك.bat افتح-دليل-التحريك.command افتح-تحريك-3D.bat افتح-تحريك-3D.command \
   افتح-تنزيل-الفيلم.bat افتح-تنزيل-الفيلم.command \
-  tools script project docs assets storyboard/raw audio \
+  افتح-تحريك-الشخصيات.bat افتح-تحريك-الشخصيات.command \
+  tools script project docs assets storyboard/raw storyboard/keys audio \
   -x '**/__pycache__/*' -x '*.pyc' -x 'storyboard/raw/*.png'
 
 if [ "${WITH_FILM:-0}" = "1" ]; then
