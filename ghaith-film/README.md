@@ -84,7 +84,7 @@ audio/lines/*.mp3 ─┘        │                        │
 |---|---|
 | تحميل المشروع (٢٥ م.ب) | `packages/ghaith-film-light.zip` أو صفحة `تحميل.html` |
 | تحميل الكود فقط (٦٩٦ ك.ب) | `packages/ghaith-film-code.zip` |
-| تحميل الفيلم (3D) | `deliver/ghaith_alhurras_1080p_3d.mp4` |
+| تحميل الفيلم (3D) | **`تنزيل-الفيلم.html`** أو `deliver/ghaith_alhurras_1080p_3d.mp4` |
 | تحميل النسخة المسطّحة | `deliver/ghaith_alhurras_1080p.mp4` |
 | إعادة بناء الفيلم بأمر واحد | `bash make_film.sh` (أو `--animate` مع التحريك) |
 | تحريك الصور 3D (الأسهل) | `python3 tools/depth3d.py --all` ثم `bash make_film.sh` |
