@@ -65,4 +65,4 @@ ghaith-film/packages/
 # بيانات المشروع (Python) يجب ألا تُستثنى
 !ghaith-film/script/*.py
 !ghaith-film/project/*.py
-ghaith-film/storyboard/clips/
+ghaith-film/storyboard/clips

@@ -13,7 +13,7 @@
 
 | الملف | الوصف |
 |---|---|
-| `deliver/ghaith_alhurras_1080p_live.mp4` | **الفيلم النهائي: شخصيات تتكلم + كاميرا 3D** — ٤:٢٢ · 51 MB |
+| `deliver/ghaith_alhurras_1080p_live.mp4` | **الفيلم النهائي: شخصيات تتكلم + كاميرا 3D** — ٤:٢٢ · 55 MB |
 | `deliver/ghaith_alhurras_1080p_3d.mp4` | نسخة حركة الكاميرا فقط |
 | `deliver/ghaith_alhurras_1080p.mp4` | النسخة المسطّحة السابقة (حركة كاميرا 2.5D فقط) |
 | `deliver/poster.jpg` | صورة الغلاف |

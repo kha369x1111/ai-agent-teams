@@ -44,6 +44,23 @@ FPS = D3.FPS
 # --------------------------------------------------------------------------- #
 # ١) قناع الكلام = منطقة الاختلاف بين A و B
 # --------------------------------------------------------------------------- #
+def match_tone(a: Image.Image, b: Image.Image) -> Image.Image:
+    """يوحّد إضاءة/ألوان B مع A (تردد منخفض فقط) حتى يبقى الفرق المحلي = الفم وحده."""
+    A = np.asarray(a, dtype=np.float32)
+    B = np.asarray(b, dtype=np.float32)
+    blur = 60
+    A_low = np.asarray(Image.fromarray(A.astype(np.uint8)).filter(ImageFilter.GaussianBlur(blur)),
+                       dtype=np.float32)
+    B_low = np.asarray(Image.fromarray(B.astype(np.uint8)).filter(ImageFilter.GaussianBlur(blur)),
+                       dtype=np.float32)
+    gain = np.clip((A_low + 6.0) / (B_low + 6.0), 0.85, 1.18)
+    gain = Image.fromarray((np.clip(gain, 0, 2) * 128).astype(np.uint8)).filter(
+        ImageFilter.GaussianBlur(30))
+    gain = np.asarray(gain, dtype=np.float32) / 128.0
+    out = np.clip(B * gain, 0, 255)
+    return Image.fromarray(out.astype(np.uint8))
+
+
 def load_pair(name: str):
     a_path = D3.find(name, RAW)
     b_path = None
@@ -61,6 +78,7 @@ def load_pair(name: str):
     if b_path is None:
         return a, None, None
     b = Image.open(b_path).convert("RGB").resize((W, H), Image.LANCZOS)
+    b = match_tone(a, b)
     mask = speech_mask(a, b, name=name)
     return a, b, mask
 
