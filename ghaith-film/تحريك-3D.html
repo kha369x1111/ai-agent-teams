@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>أسهل طريق لتحريك الصور بشكل ثلاثي الأبعاد</title>
+<link rel="preload" href="docs/Tajawal-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<style>
+  @font-face{font-family:"Tajawal";src:url("docs/Tajawal-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+  @font-face{font-family:"Tajawal";src:url("docs/Tajawal-Medium.ttf") format("truetype");font-weight:500;font-display:swap}
+  @font-face{font-family:"Tajawal";src:url("docs/Tajawal-Bold.ttf") format("truetype");font-weight:700;font-display:swap}
+  :root{--ink:#3b2a1d;--muted:#8a7259;--amber:#d99352;--line:#f0dcc2}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Tajawal",system-ui,sans-serif;color:var(--ink);line-height:1.95;
+    background:radial-gradient(1100px 520px at 88% -8%,#ffe9cd 0%,transparent 62%),
+               linear-gradient(165deg,#fffaf2,#f7e9d6 62%,#f2e0c8)}
+  header{max-width:940px;margin:0 auto;padding:44px 22px 6px;text-align:center}
+  h1{font-size:clamp(25px,4.2vw,40px);margin:0 0 10px;letter-spacing:-.4px}
+  .lead{color:var(--muted);font-size:clamp(14px,2vw,17px);max-width:680px;margin:0 auto}
+  main{max-width:940px;margin:0 auto;padding:24px 22px 90px}
+  h2{font-size:clamp(19px,2.6vw,24px);margin:42px 0 10px;padding-bottom:8px;border-bottom:2px solid #f3e2cb}
+  h3{font-size:17px;margin:26px 0 6px;color:#7c5c3a}
+  p{font-size:15.5px;color:#5f4a35;margin:0 0 12px}
+  ul,ol{font-size:15.5px;color:#5f4a35;padding-inline-start:24px}
+  li{margin-bottom:7px}
+  code{background:#f6ead9;padding:2px 7px;border-radius:6px;font-size:13px;direction:ltr;display:inline-block}
+  pre{background:#2b2130;color:#f7ecdc;border-radius:14px;padding:16px 18px;overflow:auto;
+    direction:ltr;text-align:left;font-size:13.5px;line-height:1.9;margin:0 0 14px}
+  table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:14.5px;
+    background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 12px 30px -26px rgba(120,90,50,.6)}
+  th,td{padding:11px 13px;text-align:start;border-bottom:1px solid #f4e7d5;vertical-align:top}
+  th{background:#fdf3e6;color:#7c5c3a;font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 22px;
+    box-shadow:0 14px 34px -28px rgba(120,90,50,.6);margin:18px 0}
+  .tip{background:#fff8ea;border:1px dashed #e6c9a4;border-radius:14px;padding:14px 18px;
+    color:#7a5c3c;font-size:14.5px;margin:14px 0}
+  .warn{background:#fff2f0;border:1px dashed #eec4bd;border-radius:14px;padding:14px 18px;
+    color:#8b4a3d;font-size:14.5px;margin:14px 0}
+  .best{background:#eefaf0;border:1px solid #cbe8d1;border-radius:14px;padding:14px 18px;
+    color:#2f6b42;font-size:14.5px;margin:14px 0}
+  .where{background:#eef5ff;border:1px solid #ccdcf5;border-radius:14px;padding:16px 20px;
+    color:#3c5e8f;font-size:14.5px;margin:16px 0}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0}
+  @media(max-width:760px){.grid3{grid-template-columns:1fr}}
+  .mini{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+  .mini b{display:block;margin-bottom:6px;color:#7c5c3a}
+  .mini p{margin:0;font-size:14px}
+  a{color:#a5622a}
+  footer{max-width:940px;margin:0 auto;padding:0 22px 60px;color:#9a8267;font-size:13.5px;text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <h1>كيف نحرّك الصور بشكل ثلاثي الأبعاد؟ 🧊</h1>
+  <p class="lead">أسهل طريقة تجعل الصورة الثابتة تتحرك كأنها مشهد حقيقي بكاميرا تدخل فيه —
+    بأربع طرق مرتّبة من الأسهل إلى الأقوى، وكلها عندك في المشروع الآن.</p>
+</header>
+
+<main>
+
+  <div class="where">
+    <b>📍 باختصار شديد:</b> أسهل طريقة = أن نعطي كل جزء من الصورة «بُعدًا» (قريب / بعيد)،
+    ثم نحرّك القريب أسرع من البعيد. هذا هو السرّ الذي يجعل العين تشعر بالعمق.
+    <br>الأداة جاهزة: <code>tools/depth3d.py</code> — أمر واحد فقط.
+  </div>
+
+  <h2>الفكرة مثل مسرح العرائس 🎪</h2>
+  <p>تخيّل مسرحًا فيه ثلاث طبقات من الورق: شجرة قريبة، وبيت في الوسط، وجبل بعيد.</p>
+  <ul>
+    <li>إذا تحرّكت أنت، <b>الشجرة</b> تمرّ أمام عينك بسرعة كبيرة.</li>
+    <li><b>البيت</b> يمرّ أبطأ.</li>
+    <li><b>الجبل</b> يكاد لا يتحرك.</li>
+  </ul>
+  <p>هذا بالضبط ما نفعله بصورنا: نقصّ الصورة إلى ثلاث طبقات، ونحرّك كل طبقة بمقدار مختلف.
+    النتيجة: الصورة تتحرك كأنها مجسّم، لا كأنها ورقة.</p>
+
+  <h2>الطرق الأربع — من الأسهل إلى الأقوى</h2>
+  <table>
+    <tr><th>#</th><th>الطريقة</th><th>ماذا يحدث؟</th><th>الوقت</th><th>الإنترنت</th></tr>
+    <tr>
+      <td><b>١</b></td>
+      <td><b>عمق تلقائي داخل المشروع</b><br><small>depth3d.py</small></td>
+      <td>الأداة تخمّن العمق من الصورة نفسها، تصنع ٣ طبقات، وتحرّكها + حبيبات فيلم</td>
+      <td>~٣٥ ثانية لكل صورة</td>
+      <td>لا يحتاج</td>
+    </tr>
+    <tr>
+      <td><b>٢</b></td>
+      <td><b>خريطة عمق من ذكاء اصطناعي</b><br><small>Depth Anything V2 / MiDaS</small></td>
+      <td>نموذج يقرأ الصورة ويعطي عمقًا أدقّ (خصوصًا للوجوه)، ثم نستخدمه في نفس الأداة</td>
+      <td>~١٠ دقائق لكل صورة (مرة واحدة)</td>
+      <td>نعم (مرة واحدة)</td>
+    </tr>
+    <tr>
+      <td><b>٣</b></td>
+      <td><b>صورة ← فيديو</b><br><small>Luma / Kling / Runway</small></td>
+      <td>الوجوه نفسها تتحرك وتضحك وتتكلم — الأقرب للواقعية</td>
+      <td>دقائق لكل لقطة</td>
+      <td>نعم</td>
+    </tr>
+    <tr>
+      <td><b>٤</b></td>
+      <td><b>Blender + Mixamo</b></td>
+      <td>مشهد ثلاثي الأبعاد كامل بشخصيات متحركة — احترافي جدًا</td>
+      <td>أسابيع</td>
+      <td>نعم</td>
+    </tr>
+  </table>
+
+  <div class="best">
+    <b>✅ ابدأ من رقم ١.</b> هو الأسهل، مجاني، ويعمل بدون إنترنت، والنتيجة تصلح للفيلم
+    مباشرة. لا تقفز إلى رقم ٤ قبل أن تجرّب الأول.
+  </div>
+
+  <h2>١) الطريقة الأسهل — أمر واحد 🚀</h2>
+
+  <h3>الخطوة أ: انسخ الأمر (لا تكتبه بيدك)</h3>
+  <pre>python3 tools/depth3d.py --all --strength 1.0</pre>
+  <p>على ويندوز يكون:</p>
+  <pre>python tools\depth3d.py --all --strength 1.0</pre>
+
+  <h3>الخطوة ب: انتظر</h3>
+  <p>سترى سطرًا لكل صورة:</p>
+  <pre>S01  s01_livingroom   16.41s ... 21.3 MB
+S02  s02_gigi_dad       7.68s ... 9.8 MB</pre>
+  <p>معنى السطر: رقم اللقطة، اسم الصورة، طول المقطع، ثم حجم الملف.</p>
+
+  <h3>الخطوة ج: ابنِ الفيلم</h3>
+  <pre>bash make_film.sh</pre>
+  <p>محرك الرندر يبحث تلقائيًا في <code>storyboard/clips/</code>؛ فإذا وجد مقطعًا باسم
+    <code>s01_livingroom.mp4</code> استخدمه بدلًا من الصورة الثابتة.</p>
+
+  <div class="tip">
+    <b>💡 لماذا يعمل هذا تلقائيًا؟</b> لأن القاعدة الذهبية في المشروع:
+    <b>نفس الاسم</b>. الصورة <code>s01_livingroom.jpg</code> ← المقطع
+    <code>s01_livingroom.mp4</code>. متطابقان يعني «استعمل المقطع».
+  </div>
+
+  <h2>هل أريد تجربة سريعة قبل الانتظار؟</h2>
+  <p>جرّب لقطة واحدة فقط:</p>
+  <pre>python3 tools/depth3d.py --shots S17</pre>
+  <p>أو شاهد <b>صورة واحدة</b> بنتيجة الحركة بلا فيديو (ثانية واحدة):</p>
+  <pre>python3 tools/depth3d.py --still s17_baby_closeup --u 0.9 --out _work/test.png</pre>
+  <p>غيّر <code>--u</code> من ٠ (البداية) إلى ١ (النهاية) لترى الحركة في لحظات مختلفة.</p>
+
+  <h2>المفاتيح التي تتحكم في كل شيء 🎛️</h2>
+  <table>
+    <tr><th>المفتاح</th><th>ماذا يفعل</th><th>اقتراح</th></tr>
+    <tr><td><code>--strength</code></td><td>قوة الحركة</td><td>٠.٨ = هادئة · ١.٠ = طبيعية · ١.٥ = درامية</td></tr>
+    <tr><td><code>--move</code></td><td>نوع حركة الكاميرا</td><td><code>dolly_in</code> (اقتراب) هو الأجمل للوجوه</td></tr>
+    <tr><td><code>--shots</code></td><td>لقطات محددة</td><td><code>--shots S01 S17 S31</code></td></tr>
+    <tr><td><code>--crf</code></td><td>الجودة/الحجم</td><td>١٧ = أعلى جودة · ١٩ = متوازن · ٢٣ = خفيف</td></tr>
+    <tr><td><code>--ai-depth</code></td><td>استخدام خريطة عمق جاهزة</td><td>بعد تنزيل النموذج (الطريقة ٢)</td></tr>
+  </table>
+
+  <h3>الحركات المتاحة</h3>
+  <div class="grid3">
+    <div class="mini"><b>dolly_in</b><p>ندخل نحو الشخص — الأفضل للمشاعر</p></div>
+    <div class="mini"><b>dolly_out</b><p>نبتعد لنرى المكان</p></div>
+    <div class="mini"><b>pan_left / pan_right</b><p>نمسح المشهد يمينًا أو يسارًا</p></div>
+    <div class="mini"><b>tilt_up</b><p>نصعد من الأرض إلى السماء</p></div>
+  </div>
+
+  <h2>لماذا تبدو النتيجة «واقعية»؟ (٣ أسرار) ✨</h2>
+  <ol>
+    <li><b>الفرق في السرعة:</b> القريب يتحرك أكثر من البعيد — هذه أهم نقطة.</li>
+    <li><b>ضبابية الخلفية:</b> ضبابية خفيفة جدًا للطبقة البعيدة، مثل كاميرا تركّز على الوجه.</li>
+    <li><b>حبيبات الفيلم + تظليل الأطراف:</b> تجعل الصورة النظيفة تبدو مصوّرة بكاميرا لا
+      مرسومة بالكمبيوتر.</li>
+  </ol>
+  <div class="tip">كل الأسرار الثلاثة مفعّلة افتراضيًا في <code>depth3d.py</code>.</div>
+
+  <h2>٢) ترقية العمق بخريطة من ذكاء اصطناعي 🧠</h2>
+  <p>العمق التلقائي «تخمين ذكي». أما النماذج المتخصصة فتعطي عمقًا أدقّ، خصوصًا حول الوجه
+    والشعر. أفضل خيارين مجانيين:</p>
+  <ul>
+    <li><b>Depth Anything V2</b> — على Hugging Face Space، ارفع الصورة، حمّل الخريطة.</li>
+    <li><b>MiDaS</b> — نفس الفكرة، نتائج ناعمة جدًا.</li>
+  </ul>
+  <p>ثم:</p>
+  <ol>
+    <li>ضع الخريطة الرمادية بنفس الاسم: <code>storyboard/depth/s01_livingroom.png</code></li>
+    <li>تأكد أن <b>الأبيض = قريب</b> و<b>الأسود = بعيد</b>. إن كان العكس، اقلب الصورة.</li>
+    <li>شغّل:</li>
+  </ol>
+  <pre>python3 tools/depth3d.py --all --ai-depth --strength 1.0</pre>
+
+  <div class="warn">
+    <b>⚠️ لا تملك إنترنت أو وقتًا؟</b> لا مشكلة — الطريقة ١ تعطي نتيجة قريبة جدًا.
+    الفرق يظهر أساسًا في التفاصيل الدقيقة (خصلات الشعر، أسلاك النظارة).
+  </div>
+
+  <h2>٣) عندما نريد أن يتحرك الوجه نفسه 🎬</h2>
+  <p>كل ما سبق يحرّك <b>الكاميرا</b> داخل الصورة. أما تحرّك الوجه (ضحكة، رمشة، كلام)
+    فيحتاج «صورة ← فيديو»:</p>
+  <table>
+    <tr><th>الأداة</th><th>ميزتها</th><th>ملاحظة</th></tr>
+    <tr><td><b>Kling</b></td><td>أفضل تماسك للوجه</td><td>حدود مجانية يومية</td></tr>
+    <tr><td><b>Luma Dream Machine</b></td><td>حركة كاميرا سينمائية رائعة</td><td>سهل جدًا</td></tr>
+    <tr><td><b>Runway Gen-4</b></td><td>تحكم دقيق بالحركة</td><td>مدفوع غالبًا</td></tr>
+  </table>
+  <p>اكتب في خانة الحركة جملة واضحة، مثل:</p>
+  <pre>Slow gentle push-in toward the baby's face, the baby blinks twice and smiles softly,
+mother's finger stays still, warm window light, no camera shake, 5 seconds, 16:9</pre>
+  <p>ثم ضع الملف الناتج في <code>storyboard/clips/s17_baby_closeup.mp4</code> بنفس الاسم —
+    وسيستخدمه الرندر تلقائيًا.</p>
+
+  <h2>٤) الطريق الاحترافي (لا تبدأ به) 🏗️</h2>
+  <p><b>Blender</b> لبناء المكان ثلاثي الأبعاد، و<b>Mixamo</b> لتحريك الشخصيات الجاهزة.
+    النتيجة الأفضل على الإطلاق، لكنها تحتاج أسابيع تعلّم. ابدأ بها فقط إذا كان الفيلم
+    سيُعرض في مهرجان أو تلفزيون.</p>
+
+  <h2>حلّ المشاكل السريع 🔧</h2>
+  <table>
+    <tr><th>ما تراه</th><th>السبب</th><th>الحل</th></tr>
+    <tr>
+      <td>«خطوط أو تشققات» في الصورة</td>
+      <td>الطبقات تفصلت أكثر من اللازم</td>
+      <td>قلّل <code>--strength</code> إلى ٠.٧</td>
+    </tr>
+    <tr>
+      <td>الحركة كثيرة ومزعجة</td>
+      <td>قوة عالية لصورة قريبة</td>
+      <td><code>--strength 0.6</code> أو <code>--move dolly_in</code></td>
+    </tr>
+    <tr>
+      <td>الخلفية تتحرك أكثر من الوجه</td>
+      <td>مركز الاهتمام غير صحيح</td>
+      <td>عدّل <code>FOCUS</code> في أعلى <code>depth3d.py</code></td>
+    </tr>
+    <tr>
+      <td>الفيلم لم يتغيّر بعد البناء</td>
+      <td>المقطع في مجلد خطأ</td>
+      <td>تأكد أنه في <code>storyboard/clips/</code> وبنفس اسم الصورة</td>
+    </tr>
+    <tr>
+      <td>«numpy غير موجود»</td>
+      <td>تبعية ناقصة</td>
+      <td><code>python3 -m pip install --break-system-packages pillow numpy imageio-ffmpeg</code></td>
+    </tr>
+  </table>
+
+  <div class="box">
+    <b>الملخّص في ثلاث جمل:</b>
+    <ol style="margin-bottom:0">
+      <li>العمق = أن نعطي كل جزء «قربًا» و«بعدًا».</li>
+      <li>الحركة = نحرّك القريب أسرع من البعيد.</li>
+      <li>الواقعية = نضيف ضبابية خفيفة وحبيبات فيلم — ثم أمر واحد:
+        <code>python3 tools/depth3d.py --all</code></li>
+    </ol>
+  </div>
+
+</main>
+
+<footer>
+  غيث الحرّاس · دليل التحريك ثلاثي الأبعاد —
+  <a href="index.html">الصفحة الرئيسية</a> ·
+  <a href="دليل-التحريك.html">دليل التحريك العام</a> ·
+  <a href="خطوات-الإنتاج.html">خطوات الإنتاج</a>
+</footer>
+</body>
+</html>

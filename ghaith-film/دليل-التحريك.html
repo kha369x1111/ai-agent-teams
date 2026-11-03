@@ -63,6 +63,12 @@
     (النسخة النصية موجودة أيضًا في المسار <code>docs/animation-guide.md</code> داخل المجلد.)
   </div>
 
+  <div class="where" style="background:#eefaf0;border-color:#cbe8d1;color:#2f6b42">
+    <b>🧊 جديد — تحريك ثلاثي الأبعاد حقيقي:</b> أداة <code>tools/depth3d.py</code> تقصّ الصورة
+    إلى ثلاث طبقات عمق وتحرّكها بسرعات مختلفة، فتبدو الصورة مجسّمًا لا ورقة.
+    الشرح الكامل بأمر واحد على صفحة <a href="تحريك-3D.html">تحريك-3D.html</a>.
+  </div>
+
   <h2>الطرق الثلاث في لمحة</h2>
   <table>
     <tr><th>الطريقة</th><th>ما تحصل عليه</th><th>الوقت</th><th>الأمر / الأداة</th></tr>
@@ -75,6 +81,11 @@
       <td><b>٢. عمق 2.5D</b><br><small>مفعّل الآن</small></td>
       <td>طبقتان تتحركان بسرعتين = إحساس عمق</td><td>بلا ملفات وسيطة</td>
       <td><code>--parallax 0.9</code></td>
+    </tr>
+    <tr style="background:#f6fdf7">
+      <td><b>٢ج. عمق حقيقي 3D</b><br><small>الأسهل والأقوى</small></td>
+      <td>٣ طبقات عمق + ضبابية + حبيبات فيلم</td><td>~٣٥ ثانية / صورة</td>
+      <td><code>tools/depth3d.py --all</code></td>
     </tr>
     <tr>
       <td><b>٢ب. عمق + غبار وإضاءة</b></td>
