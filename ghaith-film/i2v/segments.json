@@ -1,0 +1,1216 @@
+{
+  "max_segment_s": 5.0,
+  "count": 66,
+  "segments": [
+    {
+      "file": "S01_1",
+      "shot": "S01",
+      "segment": 1,
+      "of": 3,
+      "image": "s01_livingroom",
+      "image_path": "storyboard/raw/s01_livingroom.jpg",
+      "t0": 0.0,
+      "dur": 4.09,
+      "camera": "push_in",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "00_intro"
+      ],
+      "dialogue": "في بيتٍ صغيرٍ دافئ، كان القلب يكبر قبل أن تصل الغرفة. كانت عائلة خالد تستعد لوصول أجمل ضيف، وهذا ما حدث.",
+      "prompt": "This is segment 1 of 3 of the same continuous shot (4.1 seconds): keep the same framing progress — camera is at the start of the move of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of father Khaled (short black hair, light beard, beige linen shirt), Nana (8, dark braids, navy cardigan), Susu (5, yellow layered dress), Gigi (3, messy top-knot, pastel pyjamas, brown teddy bear). Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S01_2",
+      "shot": "S01",
+      "segment": 2,
+      "of": 3,
+      "image": "s01_livingroom",
+      "image_path": "storyboard/raw/s01_livingroom.jpg",
+      "t0": 4.09,
+      "dur": 4.09,
+      "camera": "push_in",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "00_intro"
+      ],
+      "dialogue": "في بيتٍ صغيرٍ دافئ، كان القلب يكبر قبل أن تصل الغرفة. كانت عائلة خالد تستعد لوصول أجمل ضيف، وهذا ما حدث.",
+      "prompt": "This is segment 2 of 3 of the same continuous shot (4.1 seconds): keep the same framing progress — camera is at the middle of the move of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of father Khaled (short black hair, light beard, beige linen shirt), Nana (8, dark braids, navy cardigan), Susu (5, yellow layered dress), Gigi (3, messy top-knot, pastel pyjamas, brown teddy bear). Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S01_3",
+      "shot": "S01",
+      "segment": 3,
+      "of": 3,
+      "image": "s01_livingroom",
+      "image_path": "storyboard/raw/s01_livingroom.jpg",
+      "t0": 8.19,
+      "dur": 4.09,
+      "camera": "push_in",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "00_intro"
+      ],
+      "dialogue": "في بيتٍ صغيرٍ دافئ، كان القلب يكبر قبل أن تصل الغرفة. كانت عائلة خالد تستعد لوصول أجمل ضيف، وهذا ما حدث.",
+      "prompt": "This is segment 3 of 3 of the same continuous shot (4.1 seconds): keep the same framing progress — camera is at the end of the move of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of father Khaled (short black hair, light beard, beige linen shirt), Nana (8, dark braids, navy cardigan), Susu (5, yellow layered dress), Gigi (3, messy top-knot, pastel pyjamas, brown teddy bear). Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S02_1",
+      "shot": "S02",
+      "segment": 1,
+      "of": 2,
+      "image": "s02_gigi_dad",
+      "image_path": "storyboard/raw/s02_gigi_dad.jpg",
+      "t0": 0.0,
+      "dur": 3.54,
+      "camera": "push_in",
+      "speakers": [
+        "جيجي"
+      ],
+      "lines": [
+        "01_gigi"
+      ],
+      "dialogue": "بابا... هل أخي غيث سيأكل دبدوبي؟ وهل لديه أسنان مثل الديناصور؟",
+      "prompt": "This is segment 1 of 2 of the same continuous shot (3.5 seconds): keep the same framing progress — camera is at the beginning of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of Gigi the 3-year-old (messy top-knot, pastel pyjamas, teddy bear) held by her father Khaled (beard, beige linen shirt). Speaking character: Gigi the 3-year-old — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S02_2",
+      "shot": "S02",
+      "segment": 2,
+      "of": 2,
+      "image": "s02_gigi_dad",
+      "image_path": "storyboard/raw/s02_gigi_dad.jpg",
+      "t0": 3.54,
+      "dur": 3.54,
+      "camera": "push_in",
+      "speakers": [
+        "جيجي"
+      ],
+      "lines": [
+        "01_gigi"
+      ],
+      "dialogue": "بابا... هل أخي غيث سيأكل دبدوبي؟ وهل لديه أسنان مثل الديناصور؟",
+      "prompt": "This is segment 2 of 2 of the same continuous shot (3.5 seconds): keep the same framing progress — camera is at the end of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of Gigi the 3-year-old (messy top-knot, pastel pyjamas, teddy bear) held by her father Khaled (beard, beige linen shirt). Speaking character: Gigi the 3-year-old — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S03_1",
+      "shot": "S03",
+      "segment": 1,
+      "of": 3,
+      "image": "s01_livingroom",
+      "image_path": "storyboard/raw/s01_livingroom.jpg",
+      "t0": 0.0,
+      "dur": 3.59,
+      "camera": "diag",
+      "speakers": [
+        "خالد"
+      ],
+      "lines": [
+        "02_khaled"
+      ],
+      "dialogue": "ههههه، لا يا فراشتي الصغيرة. غيث سيولد صغيراً جداً، مثل كفّ يدك، بلا أسنان، ولا يشرب إلا حليب ماما.",
+      "prompt": "This is segment 1 of 3 of the same continuous shot (3.6 seconds): keep the same framing progress — camera is at the start of the move of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of father Khaled (short black hair, light beard, beige linen shirt), Nana (8, dark braids, navy cardigan), Susu (5, yellow layered dress), Gigi (3, messy top-knot, pastel pyjamas, brown teddy bear). Speaking character: Khaled the father — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow diagonal drift forward-left. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S03_2",
+      "shot": "S03",
+      "segment": 2,
+      "of": 3,
+      "image": "s01_livingroom",
+      "image_path": "storyboard/raw/s01_livingroom.jpg",
+      "t0": 3.59,
+      "dur": 3.59,
+      "camera": "diag",
+      "speakers": [
+        "خالد"
+      ],
+      "lines": [
+        "02_khaled"
+      ],
+      "dialogue": "ههههه، لا يا فراشتي الصغيرة. غيث سيولد صغيراً جداً، مثل كفّ يدك، بلا أسنان، ولا يشرب إلا حليب ماما.",
+      "prompt": "This is segment 2 of 3 of the same continuous shot (3.6 seconds): keep the same framing progress — camera is at the middle of the move of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of father Khaled (short black hair, light beard, beige linen shirt), Nana (8, dark braids, navy cardigan), Susu (5, yellow layered dress), Gigi (3, messy top-knot, pastel pyjamas, brown teddy bear). Speaking character: Khaled the father — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow diagonal drift forward-left. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S03_3",
+      "shot": "S03",
+      "segment": 3,
+      "of": 3,
+      "image": "s01_livingroom",
+      "image_path": "storyboard/raw/s01_livingroom.jpg",
+      "t0": 7.18,
+      "dur": 3.59,
+      "camera": "diag",
+      "speakers": [
+        "خالد"
+      ],
+      "lines": [
+        "02_khaled"
+      ],
+      "dialogue": "ههههه، لا يا فراشتي الصغيرة. غيث سيولد صغيراً جداً، مثل كفّ يدك، بلا أسنان، ولا يشرب إلا حليب ماما.",
+      "prompt": "This is segment 3 of 3 of the same continuous shot (3.6 seconds): keep the same framing progress — camera is at the end of the move of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of father Khaled (short black hair, light beard, beige linen shirt), Nana (8, dark braids, navy cardigan), Susu (5, yellow layered dress), Gigi (3, messy top-knot, pastel pyjamas, brown teddy bear). Speaking character: Khaled the father — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow diagonal drift forward-left. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S04_1",
+      "shot": "S04",
+      "segment": 1,
+      "of": 2,
+      "image": "s03_nana_worried",
+      "image_path": "storyboard/raw/s03_nana_worried.jpg",
+      "t0": 0.0,
+      "dur": 4.54,
+      "camera": "push_in",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "03_narrator"
+      ],
+      "dialogue": "وفي تلك اللحظة، دخلت نانا حاملة بطانية صغيرة، وفي قلبها سؤال لم تعرف كيف تقوله.",
+      "prompt": "This is segment 1 of 2 of the same continuous shot (4.5 seconds): keep the same framing progress — camera is at the beginning of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of Nana the 8-year-old (dark braids, navy cardigan, white paper crown with stars), worried eyes, holding a small blanket. Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S04_2",
+      "shot": "S04",
+      "segment": 2,
+      "of": 2,
+      "image": "s03_nana_worried",
+      "image_path": "storyboard/raw/s03_nana_worried.jpg",
+      "t0": 4.54,
+      "dur": 4.54,
+      "camera": "push_in",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "03_narrator"
+      ],
+      "dialogue": "وفي تلك اللحظة، دخلت نانا حاملة بطانية صغيرة، وفي قلبها سؤال لم تعرف كيف تقوله.",
+      "prompt": "This is segment 2 of 2 of the same continuous shot (4.5 seconds): keep the same framing progress — camera is at the end of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of Nana the 8-year-old (dark braids, navy cardigan, white paper crown with stars), worried eyes, holding a small blanket. Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S05_1",
+      "shot": "S05",
+      "segment": 1,
+      "of": 2,
+      "image": "s03_nana_worried",
+      "image_path": "storyboard/raw/s03_nana_worried.jpg",
+      "t0": 0.0,
+      "dur": 4.47,
+      "camera": "close_push",
+      "speakers": [
+        "نانا"
+      ],
+      "lines": [
+        "04_nana"
+      ],
+      "dialogue": "بابا... عندما يأتي غيث، هل ستظل تحبنا نفس المقدار؟ أم سيأخذ نصف حبك لنا؟",
+      "prompt": "This is segment 1 of 2 of the same continuous shot (4.5 seconds): keep the same framing progress — camera is at the beginning of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of Nana the 8-year-old (dark braids, navy cardigan, white paper crown with stars), worried eyes, holding a small blanket. Speaking character: Nana the 8-year-old — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow close push towards the face, shallow depth of field. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S05_2",
+      "shot": "S05",
+      "segment": 2,
+      "of": 2,
+      "image": "s03_nana_worried",
+      "image_path": "storyboard/raw/s03_nana_worried.jpg",
+      "t0": 4.47,
+      "dur": 4.47,
+      "camera": "close_push",
+      "speakers": [
+        "نانا"
+      ],
+      "lines": [
+        "04_nana"
+      ],
+      "dialogue": "بابا... عندما يأتي غيث، هل ستظل تحبنا نفس المقدار؟ أم سيأخذ نصف حبك لنا؟",
+      "prompt": "This is segment 2 of 2 of the same continuous shot (4.5 seconds): keep the same framing progress — camera is at the end of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of Nana the 8-year-old (dark braids, navy cardigan, white paper crown with stars), worried eyes, holding a small blanket. Speaking character: Nana the 8-year-old — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow close push towards the face, shallow depth of field. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S06_1",
+      "shot": "S06",
+      "segment": 1,
+      "of": 3,
+      "image": "s04_candle_talk",
+      "image_path": "storyboard/raw/s04_candle_talk.jpg",
+      "t0": 0.0,
+      "dur": 3.64,
+      "camera": "push_in",
+      "speakers": [
+        "خالد"
+      ],
+      "lines": [
+        "05_khaled"
+      ],
+      "dialogue": "تعالي يا نانا. هل تذكرين عندما أضأنا شمعة واحدة في غرفتك، ثم شمعة ثانية لسوسو، وثالثة لجيجي؟ هل نقص ضوء الشمعة الأولى؟",
+      "prompt": "This is segment 1 of 3 of the same continuous shot (3.6 seconds): keep the same framing progress — camera is at the start of the move of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of father Khaled and Nana sitting on the floor beside three lit candles, warm candle light on their faces. Speaking character: Khaled the father — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S06_2",
+      "shot": "S06",
+      "segment": 2,
+      "of": 3,
+      "image": "s04_candle_talk",
+      "image_path": "storyboard/raw/s04_candle_talk.jpg",
+      "t0": 3.64,
+      "dur": 3.64,
+      "camera": "push_in",
+      "speakers": [
+        "خالد"
+      ],
+      "lines": [
+        "05_khaled"
+      ],
+      "dialogue": "تعالي يا نانا. هل تذكرين عندما أضأنا شمعة واحدة في غرفتك، ثم شمعة ثانية لسوسو، وثالثة لجيجي؟ هل نقص ضوء الشمعة الأولى؟",
+      "prompt": "This is segment 2 of 3 of the same continuous shot (3.6 seconds): keep the same framing progress — camera is at the middle of the move of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of father Khaled and Nana sitting on the floor beside three lit candles, warm candle light on their faces. Speaking character: Khaled the father — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S06_3",
+      "shot": "S06",
+      "segment": 3,
+      "of": 3,
+      "image": "s04_candle_talk",
+      "image_path": "storyboard/raw/s04_candle_talk.jpg",
+      "t0": 7.29,
+      "dur": 3.64,
+      "camera": "push_in",
+      "speakers": [
+        "خالد"
+      ],
+      "lines": [
+        "05_khaled"
+      ],
+      "dialogue": "تعالي يا نانا. هل تذكرين عندما أضأنا شمعة واحدة في غرفتك، ثم شمعة ثانية لسوسو، وثالثة لجيجي؟ هل نقص ضوء الشمعة الأولى؟",
+      "prompt": "This is segment 3 of 3 of the same continuous shot (3.6 seconds): keep the same framing progress — camera is at the end of the move of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of father Khaled and Nana sitting on the floor beside three lit candles, warm candle light on their faces. Speaking character: Khaled the father — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S07_1",
+      "shot": "S07",
+      "segment": 1,
+      "of": 1,
+      "image": "s04_candle_talk",
+      "image_path": "storyboard/raw/s04_candle_talk.jpg",
+      "t0": 0.0,
+      "dur": 3.19,
+      "camera": "close_push",
+      "speakers": [
+        "نانا"
+      ],
+      "lines": [
+        "06_nana"
+      ],
+      "dialogue": "لا... الغرفة أصبحت أكثر نوراً.",
+      "prompt": "The shot is 3.2 seconds long. Animate this still image into a living shot of father Khaled and Nana sitting on the floor beside three lit candles, warm candle light on their faces. Speaking character: Nana the 8-year-old — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow close push towards the face, shallow depth of field. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S08_1",
+      "shot": "S08",
+      "segment": 1,
+      "of": 4,
+      "image": "s01_livingroom",
+      "image_path": "storyboard/raw/s01_livingroom.jpg",
+      "t0": 0.0,
+      "dur": 3.95,
+      "camera": "pan_right",
+      "speakers": [
+        "خالد"
+      ],
+      "lines": [
+        "07_khaled"
+      ],
+      "dialogue": "بالضبط! حب العائلة لا ينقسم أبداً، بل يزداد ويتضاعف مع كل فرد جديد. ونحن لسنا مجرد عائلة الآن... نحن فريق حماية غيث! ولكل واحدة منكن مهمة سرية لا يستطيع أحد غيرها فعلها.",
+      "prompt": "This is segment 1 of 4 of the same continuous shot (4.0 seconds): keep the same framing progress — camera is at the start of the move of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of father Khaled (short black hair, light beard, beige linen shirt), Nana (8, dark braids, navy cardigan), Susu (5, yellow layered dress), Gigi (3, messy top-knot, pastel pyjamas, brown teddy bear). Speaking character: Khaled the father — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: very slow pan to the right. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S08_2",
+      "shot": "S08",
+      "segment": 2,
+      "of": 4,
+      "image": "s01_livingroom",
+      "image_path": "storyboard/raw/s01_livingroom.jpg",
+      "t0": 3.95,
+      "dur": 3.95,
+      "camera": "pan_right",
+      "speakers": [
+        "خالد"
+      ],
+      "lines": [
+        "07_khaled"
+      ],
+      "dialogue": "بالضبط! حب العائلة لا ينقسم أبداً، بل يزداد ويتضاعف مع كل فرد جديد. ونحن لسنا مجرد عائلة الآن... نحن فريق حماية غيث! ولكل واحدة منكن مهمة سرية لا يستطيع أحد غيرها فعلها.",
+      "prompt": "This is segment 2 of 4 of the same continuous shot (4.0 seconds): keep the same framing progress — camera is at the middle of the move of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of father Khaled (short black hair, light beard, beige linen shirt), Nana (8, dark braids, navy cardigan), Susu (5, yellow layered dress), Gigi (3, messy top-knot, pastel pyjamas, brown teddy bear). Speaking character: Khaled the father — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: very slow pan to the right. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S08_3",
+      "shot": "S08",
+      "segment": 3,
+      "of": 4,
+      "image": "s01_livingroom",
+      "image_path": "storyboard/raw/s01_livingroom.jpg",
+      "t0": 7.91,
+      "dur": 3.95,
+      "camera": "pan_right",
+      "speakers": [
+        "خالد"
+      ],
+      "lines": [
+        "07_khaled"
+      ],
+      "dialogue": "بالضبط! حب العائلة لا ينقسم أبداً، بل يزداد ويتضاعف مع كل فرد جديد. ونحن لسنا مجرد عائلة الآن... نحن فريق حماية غيث! ولكل واحدة منكن مهمة سرية لا يستطيع أحد غيرها فعلها.",
+      "prompt": "This is segment 3 of 4 of the same continuous shot (4.0 seconds): keep the same framing progress — camera is at the end of the move of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of father Khaled (short black hair, light beard, beige linen shirt), Nana (8, dark braids, navy cardigan), Susu (5, yellow layered dress), Gigi (3, messy top-knot, pastel pyjamas, brown teddy bear). Speaking character: Khaled the father — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: very slow pan to the right. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S08_4",
+      "shot": "S08",
+      "segment": 4,
+      "of": 4,
+      "image": "s01_livingroom",
+      "image_path": "storyboard/raw/s01_livingroom.jpg",
+      "t0": 11.86,
+      "dur": 3.95,
+      "camera": "pan_right",
+      "speakers": [
+        "خالد"
+      ],
+      "lines": [
+        "07_khaled"
+      ],
+      "dialogue": "بالضبط! حب العائلة لا ينقسم أبداً، بل يزداد ويتضاعف مع كل فرد جديد. ونحن لسنا مجرد عائلة الآن... نحن فريق حماية غيث! ولكل واحدة منكن مهمة سرية لا يستطيع أحد غيرها فعلها.",
+      "prompt": "This is segment 4 of 4 of the same continuous shot (4.0 seconds): keep the same framing progress — camera is at the end of the move of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of father Khaled (short black hair, light beard, beige linen shirt), Nana (8, dark braids, navy cardigan), Susu (5, yellow layered dress), Gigi (3, messy top-knot, pastel pyjamas, brown teddy bear). Speaking character: Khaled the father — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: very slow pan to the right. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S09_1",
+      "shot": "S09",
+      "segment": 1,
+      "of": 1,
+      "image": "s05_mission_cheer",
+      "image_path": "storyboard/raw/s05_mission_cheer.jpg",
+      "t0": 0.0,
+      "dur": 4.68,
+      "camera": "push_in",
+      "speakers": [
+        "سوسو"
+      ],
+      "lines": [
+        "08_susu"
+      ],
+      "dialogue": "أنا سأكون قائدة إضحاك غيث عندما يبكي!",
+      "prompt": "The shot is 4.7 seconds long. Animate this still image into a living shot of the two sisters Nana and Susu cheering together with raised hands, paper crowns with stars. Speaking character: Susu the 5-year-old — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S10_1",
+      "shot": "S10",
+      "segment": 1,
+      "of": 1,
+      "image": "s05_mission_cheer",
+      "image_path": "storyboard/raw/s05_mission_cheer.jpg",
+      "t0": 0.0,
+      "dur": 4.6,
+      "camera": "pan_left",
+      "speakers": [
+        "نانا"
+      ],
+      "lines": [
+        "10_nana"
+      ],
+      "dialogue": "وأنا مسؤولة القصص الليلية وترتيب ملابسه.",
+      "prompt": "The shot is 4.6 seconds long. Animate this still image into a living shot of the two sisters Nana and Susu cheering together with raised hands, paper crowns with stars. Speaking character: Nana the 8-year-old — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: very slow pan to the left. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S11_1",
+      "shot": "S11",
+      "segment": 1,
+      "of": 1,
+      "image": "s02_gigi_dad",
+      "image_path": "storyboard/raw/s02_gigi_dad.jpg",
+      "t0": 0.0,
+      "dur": 4.67,
+      "camera": "close_push",
+      "speakers": [
+        "جيجي"
+      ],
+      "lines": [
+        "11_gigi"
+      ],
+      "dialogue": "وأنا سأعيره دبدوبي الصغير... في النهار فقط!",
+      "prompt": "The shot is 4.7 seconds long. Animate this still image into a living shot of Gigi the 3-year-old (messy top-knot, pastel pyjamas, teddy bear) held by her father Khaled (beard, beige linen shirt). Speaking character: Gigi the 3-year-old — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow close push towards the face, shallow depth of field. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S12_1",
+      "shot": "S12",
+      "segment": 1,
+      "of": 2,
+      "image": "s06_group_hug",
+      "image_path": "storyboard/raw/s06_group_hug.jpg",
+      "t0": 0.0,
+      "dur": 4.14,
+      "camera": "pull_out",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "12_narrator"
+      ],
+      "dialogue": "وعناق دافئ، وضحكات صغيرة... ثم رنّ الهاتف. كانت الطبيبة تقول: حان الوقت.",
+      "prompt": "This is segment 1 of 2 of the same continuous shot (4.1 seconds): keep the same framing progress — camera is at the beginning of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of the whole family hugging: father Khaled, Nana, Susu and Gigi squeezed together. Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow pull-back revealing the room. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S12_2",
+      "shot": "S12",
+      "segment": 2,
+      "of": 2,
+      "image": "s06_group_hug",
+      "image_path": "storyboard/raw/s06_group_hug.jpg",
+      "t0": 4.14,
+      "dur": 4.14,
+      "camera": "pull_out",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "12_narrator"
+      ],
+      "dialogue": "وعناق دافئ، وضحكات صغيرة... ثم رنّ الهاتف. كانت الطبيبة تقول: حان الوقت.",
+      "prompt": "This is segment 2 of 2 of the same continuous shot (4.1 seconds): keep the same framing progress — camera is at the end of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of the whole family hugging: father Khaled, Nana, Susu and Gigi squeezed together. Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow pull-back revealing the room. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S13_1",
+      "shot": "S13",
+      "segment": 1,
+      "of": 1,
+      "image": "s07_phone_rings",
+      "image_path": "storyboard/raw/s07_phone_rings.jpg",
+      "t0": 0.0,
+      "dur": 3.4,
+      "camera": "push_in",
+      "speakers": [],
+      "lines": [],
+      "dialogue": "",
+      "prompt": "The shot is 3.4 seconds long. Animate this still image into a living shot of a phone face-up on a wooden coffee table in a warm nursery, screen glowing, soft baby toys around it. Give the scene ambient life: soft breathing, blinking, hair and clothes moving a little, dust motes and light shimmer. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S14_1",
+      "shot": "S14",
+      "segment": 1,
+      "of": 2,
+      "image": "s08_workshop_table",
+      "image_path": "storyboard/raw/s08_workshop_table.jpg",
+      "t0": 0.0,
+      "dur": 3.33,
+      "camera": "push_in",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "13_narrator"
+      ],
+      "dialogue": "وبعد ساعات قليلة، كان البيت يتحول إلى ورشة عمل صغيرة.",
+      "prompt": "This is segment 1 of 2 of the same continuous shot (3.3 seconds): keep the same framing progress — camera is at the beginning of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of children's hands drawing and cutting coloured paper crafts on a round table, crayons and glue scattered around. Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S14_2",
+      "shot": "S14",
+      "segment": 2,
+      "of": 2,
+      "image": "s08_workshop_table",
+      "image_path": "storyboard/raw/s08_workshop_table.jpg",
+      "t0": 3.33,
+      "dur": 3.33,
+      "camera": "push_in",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "13_narrator"
+      ],
+      "dialogue": "وبعد ساعات قليلة، كان البيت يتحول إلى ورشة عمل صغيرة.",
+      "prompt": "This is segment 2 of 2 of the same continuous shot (3.3 seconds): keep the same framing progress — camera is at the end of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of children's hands drawing and cutting coloured paper crafts on a round table, crayons and glue scattered around. Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S15_1",
+      "shot": "S15",
+      "segment": 1,
+      "of": 1,
+      "image": "s09_susu_drawing",
+      "image_path": "storyboard/raw/s09_susu_drawing.jpg",
+      "t0": 0.0,
+      "dur": 4.83,
+      "camera": "push_in",
+      "speakers": [
+        "سوسو"
+      ],
+      "lines": [
+        "14_susu"
+      ],
+      "dialogue": "سأرسم له أسرع سيارة في العالم!",
+      "prompt": "The shot is 4.8 seconds long. Animate this still image into a living shot of Susu the 5-year-old (ponytails with yellow ribbons, yellow dress) drawing a smiling blue cloud with a blue crayon. Speaking character: Susu the 5-year-old — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S16_1",
+      "shot": "S16",
+      "segment": 1,
+      "of": 2,
+      "image": "s10_nana_card",
+      "image_path": "storyboard/raw/s10_nana_card.jpg",
+      "t0": 0.0,
+      "dur": 4.51,
+      "camera": "push_in",
+      "speakers": [
+        "نانا"
+      ],
+      "lines": [
+        "15_nana"
+      ],
+      "dialogue": "سوسو، إنه طفل صغير. انظري، كتبت بطاقة باسمه: غيث، نحن نحبك قبل أن نراك.",
+      "prompt": "This is segment 1 of 2 of the same continuous shot (4.5 seconds): keep the same framing progress — camera is at the beginning of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of Nana the 8-year-old writing a greeting card on a pink desk, coloured pencils in a cup. Speaking character: Nana the 8-year-old — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S16_2",
+      "shot": "S16",
+      "segment": 2,
+      "of": 2,
+      "image": "s10_nana_card",
+      "image_path": "storyboard/raw/s10_nana_card.jpg",
+      "t0": 4.51,
+      "dur": 4.51,
+      "camera": "push_in",
+      "speakers": [
+        "نانا"
+      ],
+      "lines": [
+        "15_nana"
+      ],
+      "dialogue": "سوسو، إنه طفل صغير. انظري، كتبت بطاقة باسمه: غيث، نحن نحبك قبل أن نراك.",
+      "prompt": "This is segment 2 of 2 of the same continuous shot (4.5 seconds): keep the same framing progress — camera is at the end of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of Nana the 8-year-old writing a greeting card on a pink desk, coloured pencils in a cup. Speaking character: Nana the 8-year-old — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S17_1",
+      "shot": "S17",
+      "segment": 1,
+      "of": 1,
+      "image": "s11_gigi_handprint",
+      "image_path": "storyboard/raw/s11_gigi_handprint.jpg",
+      "t0": 0.0,
+      "dur": 2.89,
+      "camera": "push_in",
+      "speakers": [
+        "جيجي"
+      ],
+      "lines": [
+        "16_gigi"
+      ],
+      "dialogue": "هذه بصمتي أنا أيضاً!",
+      "prompt": "The shot is 2.9 seconds long. Animate this still image into a living shot of Gigi the 3-year-old pressing a painted handprint onto paper, paint on her cheek, teddy bear beside her. Speaking character: Gigi the 3-year-old — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S18_1",
+      "shot": "S18",
+      "segment": 1,
+      "of": 2,
+      "image": "s11_gigi_handprint",
+      "image_path": "storyboard/raw/s11_gigi_handprint.jpg",
+      "t0": 0.0,
+      "dur": 2.7,
+      "camera": "close_push",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "17_narrator"
+      ],
+      "dialogue": "ثلاث أيدٍ صغيرة... وبصمة أصغر منهن جميعاً.",
+      "prompt": "This is segment 1 of 2 of the same continuous shot (2.7 seconds): keep the same framing progress — camera is at the beginning of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of Gigi the 3-year-old pressing a painted handprint onto paper, paint on her cheek, teddy bear beside her. Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow close push towards the face, shallow depth of field. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S18_2",
+      "shot": "S18",
+      "segment": 2,
+      "of": 2,
+      "image": "s11_gigi_handprint",
+      "image_path": "storyboard/raw/s11_gigi_handprint.jpg",
+      "t0": 2.7,
+      "dur": 2.7,
+      "camera": "close_push",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "17_narrator"
+      ],
+      "dialogue": "ثلاث أيدٍ صغيرة... وبصمة أصغر منهن جميعاً.",
+      "prompt": "This is segment 2 of 2 of the same continuous shot (2.7 seconds): keep the same framing progress — camera is at the end of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of Gigi the 3-year-old pressing a painted handprint onto paper, paint on her cheek, teddy bear beside her. Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow close push towards the face, shallow depth of field. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S19_1",
+      "shot": "S19",
+      "segment": 1,
+      "of": 2,
+      "image": "s12_dad_ready",
+      "image_path": "storyboard/raw/s12_dad_ready.jpg",
+      "t0": 0.0,
+      "dur": 3.25,
+      "camera": "push_in",
+      "speakers": [
+        "خالد"
+      ],
+      "lines": [
+        "18_khaled"
+      ],
+      "dialogue": "يا بطلات فريقي... هل أنتن جاهزات للقاء القائد الصغير؟ أمكم تنتظرنا.",
+      "prompt": "This is segment 1 of 2 of the same continuous shot (3.2 seconds): keep the same framing progress — camera is at the beginning of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of father Khaled ready to leave, holding a duffel bag in the doorway, the two older girls in paper crowns looking up at him. Speaking character: Khaled the father — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S19_2",
+      "shot": "S19",
+      "segment": 2,
+      "of": 2,
+      "image": "s12_dad_ready",
+      "image_path": "storyboard/raw/s12_dad_ready.jpg",
+      "t0": 3.25,
+      "dur": 3.25,
+      "camera": "push_in",
+      "speakers": [
+        "خالد"
+      ],
+      "lines": [
+        "18_khaled"
+      ],
+      "dialogue": "يا بطلات فريقي... هل أنتن جاهزات للقاء القائد الصغير؟ أمكم تنتظرنا.",
+      "prompt": "This is segment 2 of 2 of the same continuous shot (3.2 seconds): keep the same framing progress — camera is at the end of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of father Khaled ready to leave, holding a duffel bag in the doorway, the two older girls in paper crowns looking up at him. Speaking character: Khaled the father — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S20_1",
+      "shot": "S20",
+      "segment": 1,
+      "of": 2,
+      "image": "s13_hero_walk",
+      "image_path": "storyboard/raw/s13_hero_walk.jpg",
+      "t0": 0.0,
+      "dur": 3.89,
+      "camera": "tilt_up",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "19_narrator"
+      ],
+      "dialogue": "ولبسن قبعات ورقية متطابقة، وسرن بخطوات واثقة وإيقاعية نحو الباب.",
+      "prompt": "This is segment 1 of 2 of the same continuous shot (3.9 seconds): keep the same framing progress — camera is at the beginning of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of three sisters walking away from camera towards a bright doorway, holding hands, paper crowns, warm backlight. Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow tilt up following the girls. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S20_2",
+      "shot": "S20",
+      "segment": 2,
+      "of": 2,
+      "image": "s13_hero_walk",
+      "image_path": "storyboard/raw/s13_hero_walk.jpg",
+      "t0": 3.89,
+      "dur": 3.89,
+      "camera": "tilt_up",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "19_narrator"
+      ],
+      "dialogue": "ولبسن قبعات ورقية متطابقة، وسرن بخطوات واثقة وإيقاعية نحو الباب.",
+      "prompt": "This is segment 2 of 2 of the same continuous shot (3.9 seconds): keep the same framing progress — camera is at the end of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of three sisters walking away from camera towards a bright doorway, holding hands, paper crowns, warm backlight. Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow tilt up following the girls. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S21_1",
+      "shot": "S21",
+      "segment": 1,
+      "of": 2,
+      "image": "s14_corridor",
+      "image_path": "storyboard/raw/s14_corridor.jpg",
+      "t0": 0.0,
+      "dur": 3.65,
+      "camera": "push_in",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "20_narrator"
+      ],
+      "dialogue": "في ممر المستشفى، كانت الخطوات تصغر وتصير أهدأ... وباب يفتح ببطء.",
+      "prompt": "This is segment 1 of 2 of the same continuous shot (3.6 seconds): keep the same framing progress — camera is at the beginning of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of three sisters walking hand in hand down a hospital corridor, paper crowns, soft daylight. Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S21_2",
+      "shot": "S21",
+      "segment": 2,
+      "of": 2,
+      "image": "s14_corridor",
+      "image_path": "storyboard/raw/s14_corridor.jpg",
+      "t0": 3.65,
+      "dur": 3.65,
+      "camera": "push_in",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "20_narrator"
+      ],
+      "dialogue": "في ممر المستشفى، كانت الخطوات تصغر وتصير أهدأ... وباب يفتح ببطء.",
+      "prompt": "This is segment 2 of 2 of the same continuous shot (3.6 seconds): keep the same framing progress — camera is at the end of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of three sisters walking hand in hand down a hospital corridor, paper crowns, soft daylight. Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S22_1",
+      "shot": "S22",
+      "segment": 1,
+      "of": 1,
+      "image": "s14_corridor",
+      "image_path": "storyboard/raw/s14_corridor.jpg",
+      "t0": 0.0,
+      "dur": 1.48,
+      "camera": "close_push",
+      "speakers": [
+        "البنات"
+      ],
+      "lines": [
+        "21_girls"
+      ],
+      "dialogue": "ماما...!",
+      "prompt": "The shot is 1.5 seconds long. Animate this still image into a living shot of three sisters walking hand in hand down a hospital corridor, paper crowns, soft daylight. Speaking character: the three sisters in chorus — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow close push towards the face, shallow depth of field. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S23_1",
+      "shot": "S23",
+      "segment": 1,
+      "of": 1,
+      "image": "s15_mother_arms",
+      "image_path": "storyboard/raw/s15_mother_arms.jpg",
+      "t0": 0.0,
+      "dur": 4.13,
+      "camera": "push_in",
+      "speakers": [
+        "سارة"
+      ],
+      "lines": [
+        "22_sara"
+      ],
+      "dialogue": "أميراتي الصغيرات... تعالين إليّ.",
+      "prompt": "The shot is 4.1 seconds long. Animate this still image into a living shot of mother Sara in a hospital bed holding all three daughters in a hug, newborn bassinet near. Speaking character: Sara the mother — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S24_1",
+      "shot": "S24",
+      "segment": 1,
+      "of": 1,
+      "image": "s15_mother_arms",
+      "image_path": "storyboard/raw/s15_mother_arms.jpg",
+      "t0": 0.0,
+      "dur": 4.37,
+      "camera": "close_push",
+      "speakers": [
+        "خالد"
+      ],
+      "lines": [
+        "23_khaled"
+      ],
+      "dialogue": "جلبنا لك فريقك الخاص... ومعهم هدية سرية.",
+      "prompt": "The shot is 4.4 seconds long. Animate this still image into a living shot of mother Sara in a hospital bed holding all three daughters in a hug, newborn bassinet near. Speaking character: Khaled the father — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow close push towards the face, shallow depth of field. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S25_1",
+      "shot": "S25",
+      "segment": 1,
+      "of": 2,
+      "image": "s11_gigi_handprint",
+      "image_path": "storyboard/raw/s11_gigi_handprint.jpg",
+      "t0": 0.0,
+      "dur": 2.7,
+      "camera": "pan_right",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "24_narrator"
+      ],
+      "dialogue": "قدمت نانا اللوحة المشتركة... فدمعت عينا سارة من التأثر.",
+      "prompt": "This is segment 1 of 2 of the same continuous shot (2.7 seconds): keep the same framing progress — camera is at the beginning of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of Gigi the 3-year-old pressing a painted handprint onto paper, paint on her cheek, teddy bear beside her. Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: very slow pan to the right. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S25_2",
+      "shot": "S25",
+      "segment": 2,
+      "of": 2,
+      "image": "s11_gigi_handprint",
+      "image_path": "storyboard/raw/s11_gigi_handprint.jpg",
+      "t0": 2.7,
+      "dur": 2.7,
+      "camera": "pan_right",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "24_narrator"
+      ],
+      "dialogue": "قدمت نانا اللوحة المشتركة... فدمعت عينا سارة من التأثر.",
+      "prompt": "This is segment 2 of 2 of the same continuous shot (2.7 seconds): keep the same framing progress — camera is at the end of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of Gigi the 3-year-old pressing a painted handprint onto paper, paint on her cheek, teddy bear beside her. Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: very slow pan to the right. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S26_1",
+      "shot": "S26",
+      "segment": 1,
+      "of": 1,
+      "image": "s16_bassinet",
+      "image_path": "storyboard/raw/s16_bassinet.jpg",
+      "t0": 0.0,
+      "dur": 1.58,
+      "camera": "push_in",
+      "speakers": [
+        "سوسو"
+      ],
+      "lines": [
+        "25_susu"
+      ],
+      "dialogue": "أين هو؟",
+      "prompt": "The shot is 1.6 seconds long. Animate this still image into a living shot of two girls leaning over a clear bassinet where the newborn Ghaith sleeps, swaddled in a white blanket with blue stars. Speaking character: Susu the 5-year-old — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S27_1",
+      "shot": "S27",
+      "segment": 1,
+      "of": 1,
+      "image": "s17_baby_closeup",
+      "image_path": "storyboard/raw/s17_baby_closeup.jpg",
+      "t0": 0.0,
+      "dur": 4.99,
+      "camera": "push_in",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "26_narrator"
+      ],
+      "dialogue": "رفعت الأم الغطاء برفق... وظهر وجه غيث الصغير.",
+      "prompt": "The shot is 5.0 seconds long. Animate this still image into a living shot of close-up of the sleeping newborn Ghaith, dark hair, rosy cheeks, white star blanket. Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S28_1",
+      "shot": "S28",
+      "segment": 1,
+      "of": 1,
+      "image": "s18_gigi_wow",
+      "image_path": "storyboard/raw/s18_gigi_wow.jpg",
+      "t0": 0.0,
+      "dur": 4.08,
+      "camera": "push_in",
+      "speakers": [
+        "جيجي"
+      ],
+      "lines": [
+        "27_gigi"
+      ],
+      "dialogue": "واااو... إنه حقيقي، وأصغر من عروستي!",
+      "prompt": "The shot is 4.1 seconds long. Animate this still image into a living shot of Gigi the 3-year-old amazed, one finger on her chin, teddy bear in her arms, bassinet in the foreground. Speaking character: Gigi the 3-year-old — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S29_1",
+      "shot": "S29",
+      "segment": 1,
+      "of": 2,
+      "image": "s19_nana_pinky",
+      "image_path": "storyboard/raw/s19_nana_pinky.jpg",
+      "t0": 0.0,
+      "dur": 3.15,
+      "camera": "close_push",
+      "speakers": [
+        "نانا"
+      ],
+      "lines": [
+        "28_nana"
+      ],
+      "dialogue": "أنا نانا، أختك الكبرى... لن أسمح لأي شيء بأن يخيفك أبداً.",
+      "prompt": "This is segment 1 of 2 of the same continuous shot (3.2 seconds): keep the same framing progress — camera is at the beginning of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of close-up of Nana's small finger touching the newborn's tiny hand, both faces soft. Speaking character: Nana the 8-year-old — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow close push towards the face, shallow depth of field. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S29_2",
+      "shot": "S29",
+      "segment": 2,
+      "of": 2,
+      "image": "s19_nana_pinky",
+      "image_path": "storyboard/raw/s19_nana_pinky.jpg",
+      "t0": 3.15,
+      "dur": 3.15,
+      "camera": "close_push",
+      "speakers": [
+        "نانا"
+      ],
+      "lines": [
+        "28_nana"
+      ],
+      "dialogue": "أنا نانا، أختك الكبرى... لن أسمح لأي شيء بأن يخيفك أبداً.",
+      "prompt": "This is segment 2 of 2 of the same continuous shot (3.2 seconds): keep the same framing progress — camera is at the end of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of close-up of Nana's small finger touching the newborn's tiny hand, both faces soft. Speaking character: Nana the 8-year-old — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow close push towards the face, shallow depth of field. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S30_1",
+      "shot": "S30",
+      "segment": 1,
+      "of": 2,
+      "image": "s20_sara_proud",
+      "image_path": "storyboard/raw/s20_sara_proud.jpg",
+      "t0": 0.0,
+      "dur": 4.38,
+      "camera": "push_in",
+      "speakers": [
+        "سارة"
+      ],
+      "lines": [
+        "29_sara"
+      ],
+      "dialogue": "هو محظوظ جداً لأن لديه ثلاث نجمات تنير طريقه... وأنا محظوظة بكن.",
+      "prompt": "This is segment 1 of 2 of the same continuous shot (4.4 seconds): keep the same framing progress — camera is at the beginning of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of mother Sara smiling proudly, tired but glowing, beside the bassinet. Speaking character: Sara the mother — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S30_2",
+      "shot": "S30",
+      "segment": 2,
+      "of": 2,
+      "image": "s20_sara_proud",
+      "image_path": "storyboard/raw/s20_sara_proud.jpg",
+      "t0": 4.38,
+      "dur": 4.38,
+      "camera": "push_in",
+      "speakers": [
+        "سارة"
+      ],
+      "lines": [
+        "29_sara"
+      ],
+      "dialogue": "هو محظوظ جداً لأن لديه ثلاث نجمات تنير طريقه... وأنا محظوظة بكن.",
+      "prompt": "This is segment 2 of 2 of the same continuous shot (4.4 seconds): keep the same framing progress — camera is at the end of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of mother Sara smiling proudly, tired but glowing, beside the bassinet. Speaking character: Sara the mother — natural lip-sync on the line, small head nods, blinking, eyebrows and smile changing with the emotion; the others listen and react subtly (blink, tilt head, small smile). Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S31_1",
+      "shot": "S31",
+      "segment": 1,
+      "of": 2,
+      "image": "s21_sisters_around",
+      "image_path": "storyboard/raw/s21_sisters_around.jpg",
+      "t0": 0.0,
+      "dur": 4.0,
+      "camera": "hold_drift",
+      "speakers": [],
+      "lines": [],
+      "dialogue": "",
+      "prompt": "This is segment 1 of 2 of the same continuous shot (4.0 seconds): keep the same framing progress — camera is at the beginning of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of the three sisters and both parents around the bassinet singing together, sunset window. Everyone sings together: mouths open and close on the melody, gentle swaying, happy eyes, hands moving slightly. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: almost static camera with a very slow drift. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S31_2",
+      "shot": "S31",
+      "segment": 2,
+      "of": 2,
+      "image": "s21_sisters_around",
+      "image_path": "storyboard/raw/s21_sisters_around.jpg",
+      "t0": 4.0,
+      "dur": 4.0,
+      "camera": "hold_drift",
+      "speakers": [],
+      "lines": [],
+      "dialogue": "",
+      "prompt": "This is segment 2 of 2 of the same continuous shot (4.0 seconds): keep the same framing progress — camera is at the end of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of the three sisters and both parents around the bassinet singing together, sunset window. Everyone sings together: mouths open and close on the melody, gentle swaying, happy eyes, hands moving slightly. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: almost static camera with a very slow drift. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S32_1",
+      "shot": "S32",
+      "segment": 1,
+      "of": 2,
+      "image": "s22_song_wide",
+      "image_path": "storyboard/raw/s22_song_wide.jpg",
+      "t0": 0.0,
+      "dur": 4.0,
+      "camera": "pull_out",
+      "speakers": [],
+      "lines": [],
+      "dialogue": "",
+      "prompt": "This is segment 1 of 2 of the same continuous shot (4.0 seconds): keep the same framing progress — camera is at the beginning of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of wide shot of the whole family singing around the bassinet, golden sunset window. Everyone sings together: mouths open and close on the melody, gentle swaying, happy eyes, hands moving slightly. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow pull-back revealing the room. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S32_2",
+      "shot": "S32",
+      "segment": 2,
+      "of": 2,
+      "image": "s22_song_wide",
+      "image_path": "storyboard/raw/s22_song_wide.jpg",
+      "t0": 4.0,
+      "dur": 4.0,
+      "camera": "pull_out",
+      "speakers": [],
+      "lines": [],
+      "dialogue": "",
+      "prompt": "This is segment 2 of 2 of the same continuous shot (4.0 seconds): keep the same framing progress — camera is at the end of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of wide shot of the whole family singing around the bassinet, golden sunset window. Everyone sings together: mouths open and close on the melody, gentle swaying, happy eyes, hands moving slightly. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow pull-back revealing the room. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S33_1",
+      "shot": "S33",
+      "segment": 1,
+      "of": 2,
+      "image": "s17_baby_closeup",
+      "image_path": "storyboard/raw/s17_baby_closeup.jpg",
+      "t0": 0.0,
+      "dur": 3.5,
+      "camera": "close_push",
+      "speakers": [],
+      "lines": [],
+      "dialogue": "",
+      "prompt": "This is segment 1 of 2 of the same continuous shot (3.5 seconds): keep the same framing progress — camera is at the beginning of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of close-up of the sleeping newborn Ghaith, dark hair, rosy cheeks, white star blanket. Everyone sings together: mouths open and close on the melody, gentle swaying, happy eyes, hands moving slightly. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow close push towards the face, shallow depth of field. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S33_2",
+      "shot": "S33",
+      "segment": 2,
+      "of": 2,
+      "image": "s17_baby_closeup",
+      "image_path": "storyboard/raw/s17_baby_closeup.jpg",
+      "t0": 3.5,
+      "dur": 3.5,
+      "camera": "close_push",
+      "speakers": [],
+      "lines": [],
+      "dialogue": "",
+      "prompt": "This is segment 2 of 2 of the same continuous shot (3.5 seconds): keep the same framing progress — camera is at the end of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of close-up of the sleeping newborn Ghaith, dark hair, rosy cheeks, white star blanket. Everyone sings together: mouths open and close on the melody, gentle swaying, happy eyes, hands moving slightly. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow close push towards the face, shallow depth of field. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S34_1",
+      "shot": "S34",
+      "segment": 1,
+      "of": 2,
+      "image": "s21_sisters_around",
+      "image_path": "storyboard/raw/s21_sisters_around.jpg",
+      "t0": 0.0,
+      "dur": 3.5,
+      "camera": "push_in",
+      "speakers": [],
+      "lines": [],
+      "dialogue": "",
+      "prompt": "This is segment 1 of 2 of the same continuous shot (3.5 seconds): keep the same framing progress — camera is at the beginning of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of the three sisters and both parents around the bassinet singing together, sunset window. Everyone sings together: mouths open and close on the melody, gentle swaying, happy eyes, hands moving slightly. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S34_2",
+      "shot": "S34",
+      "segment": 2,
+      "of": 2,
+      "image": "s21_sisters_around",
+      "image_path": "storyboard/raw/s21_sisters_around.jpg",
+      "t0": 3.5,
+      "dur": 3.5,
+      "camera": "push_in",
+      "speakers": [],
+      "lines": [],
+      "dialogue": "",
+      "prompt": "This is segment 2 of 2 of the same continuous shot (3.5 seconds): keep the same framing progress — camera is at the end of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of the three sisters and both parents around the bassinet singing together, sunset window. Everyone sings together: mouths open and close on the melody, gentle swaying, happy eyes, hands moving slightly. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S35_1",
+      "shot": "S35",
+      "segment": 1,
+      "of": 4,
+      "image": "s22_song_wide",
+      "image_path": "storyboard/raw/s22_song_wide.jpg",
+      "t0": 0.0,
+      "dur": 4.14,
+      "camera": "hold_drift",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "30_closing"
+      ],
+      "dialogue": "وهناك، حول السرير الصغير، ولد فريق الحراسة السرّي... بثلاث قلوب كبيرة. يا غيث... أهلاً بك في البيت، أهلاً بك في الفريق، أهلاً بك في الحب الذي لا ينقص أبداً.",
+      "prompt": "This is segment 1 of 4 of the same continuous shot (4.1 seconds): keep the same framing progress — camera is at the start of the move of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of wide shot of the whole family singing around the bassinet, golden sunset window. Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: almost static camera with a very slow drift. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S35_2",
+      "shot": "S35",
+      "segment": 2,
+      "of": 4,
+      "image": "s22_song_wide",
+      "image_path": "storyboard/raw/s22_song_wide.jpg",
+      "t0": 4.14,
+      "dur": 4.14,
+      "camera": "hold_drift",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "30_closing"
+      ],
+      "dialogue": "وهناك، حول السرير الصغير، ولد فريق الحراسة السرّي... بثلاث قلوب كبيرة. يا غيث... أهلاً بك في البيت، أهلاً بك في الفريق، أهلاً بك في الحب الذي لا ينقص أبداً.",
+      "prompt": "This is segment 2 of 4 of the same continuous shot (4.1 seconds): keep the same framing progress — camera is at the middle of the move of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of wide shot of the whole family singing around the bassinet, golden sunset window. Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: almost static camera with a very slow drift. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S35_3",
+      "shot": "S35",
+      "segment": 3,
+      "of": 4,
+      "image": "s22_song_wide",
+      "image_path": "storyboard/raw/s22_song_wide.jpg",
+      "t0": 8.29,
+      "dur": 4.14,
+      "camera": "hold_drift",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "30_closing"
+      ],
+      "dialogue": "وهناك، حول السرير الصغير، ولد فريق الحراسة السرّي... بثلاث قلوب كبيرة. يا غيث... أهلاً بك في البيت، أهلاً بك في الفريق، أهلاً بك في الحب الذي لا ينقص أبداً.",
+      "prompt": "This is segment 3 of 4 of the same continuous shot (4.1 seconds): keep the same framing progress — camera is at the end of the move of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of wide shot of the whole family singing around the bassinet, golden sunset window. Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: almost static camera with a very slow drift. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S35_4",
+      "shot": "S35",
+      "segment": 4,
+      "of": 4,
+      "image": "s22_song_wide",
+      "image_path": "storyboard/raw/s22_song_wide.jpg",
+      "t0": 12.43,
+      "dur": 4.14,
+      "camera": "hold_drift",
+      "speakers": [
+        "الراوي"
+      ],
+      "lines": [
+        "30_closing"
+      ],
+      "dialogue": "وهناك، حول السرير الصغير، ولد فريق الحراسة السرّي... بثلاث قلوب كبيرة. يا غيث... أهلاً بك في البيت، أهلاً بك في الفريق، أهلاً بك في الحب الذي لا ينقص أبداً.",
+      "prompt": "This is segment 4 of 4 of the same continuous shot (4.1 seconds): keep the same framing progress — camera is at the end of the move of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of wide shot of the whole family singing around the bassinet, golden sunset window. Narration plays over the shot: the characters do not mouth words — they listen and react with blinking, breathing, small head turns and changing expressions. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: almost static camera with a very slow drift. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S36_1",
+      "shot": "S36",
+      "segment": 1,
+      "of": 2,
+      "image": "s24_photo_frame",
+      "image_path": "storyboard/raw/s24_photo_frame.jpg",
+      "t0": 0.0,
+      "dur": 3.0,
+      "camera": "push_in",
+      "speakers": [],
+      "lines": [],
+      "dialogue": "",
+      "prompt": "This is segment 1 of 2 of the same continuous shot (3.0 seconds): keep the same framing progress — camera is at the beginning of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of a framed family photograph on the wall: parents holding the newborn, three girls in paper crowns around them. Give the scene ambient life: soft breathing, blinking, hair and clothes moving a little, dust motes and light shimmer. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    },
+    {
+      "file": "S36_2",
+      "shot": "S36",
+      "segment": 2,
+      "of": 2,
+      "image": "s24_photo_frame",
+      "image_path": "storyboard/raw/s24_photo_frame.jpg",
+      "t0": 3.0,
+      "dur": 3.0,
+      "camera": "push_in",
+      "speakers": [],
+      "lines": [],
+      "dialogue": "",
+      "prompt": "This is segment 2 of 2 of the same continuous shot (3.0 seconds): keep the same framing progress — camera is at the end of the move. Do not cut, do not restart the framing. Animate this still image into a living shot of a framed family photograph on the wall: parents holding the newborn, three girls in paper crowns around them. Give the scene ambient life: soft breathing, blinking, hair and clothes moving a little, dust motes and light shimmer. Body language: weight shifts, small gestures with hands, believable secondary motion in hair, sleeves and fabric. Camera: slow cinematic push-in, camera moves gently forward. Keep exactly the same characters, faces, clothing, props, framing and lighting as the reference image — do not redesign anything, no new people, no text on screen. Pixar/Disney style 3D children's animation, warm pastel palette, soft cinematic lighting, expressive faces, physically believable cloth and hair, 24 fps cinematic motion, no text, no watermark, no logo."
+    }
+  ]
+}

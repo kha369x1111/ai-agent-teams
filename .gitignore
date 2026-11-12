@@ -70,3 +70,5 @@ ghaith-film/storyboard/clips
 # حزمة Image-to-Video: الطلبات والجدول يجب أن تُحفظ (تُعيد بناءها بـ tools/i2v.py)
 !ghaith-film/i2v/requests.json
 !ghaith-film/i2v/shotlist.csv
+!ghaith-film/i2v/segments.json
+!ghaith-film/i2v/segments.csv
