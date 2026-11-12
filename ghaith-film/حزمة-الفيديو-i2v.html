@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>تحريك الشخصيات — من صورة ثابتة إلى شخص يتكلم</title>
+<style>
+  @font-face{font-family:"Tajawal";src:url("docs/Tajawal-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+  @font-face{font-family:"Tajawal";src:url("docs/Tajawal-Bold.ttf") format("truetype");font-weight:700;font-display:swap}
+  :root{--ink:#2f2430;--muted:#7d6b78;--line:#e9d9c8}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Tajawal",system-ui,sans-serif;color:var(--ink);line-height:1.9;
+    background:radial-gradient(900px 460px at 85% -10%,#ffe4d0,transparent 60%),linear-gradient(160deg,#fffaf5,#f6ece3 70%)}
+  header{max-width:900px;margin:0 auto;padding:42px 22px 4px;text-align:center}
+  h1{font-size:clamp(24px,4vw,38px);margin:0 0 8px}
+  .lead{color:var(--muted);font-size:16px;max-width:640px;margin:0 auto}
+  main{max-width:900px;margin:0 auto;padding:24px 22px 80px}
+  h2{font-size:clamp(18px,2.5vw,23px);margin:36px 0 10px;padding-bottom:7px;border-bottom:2px solid #f1e2d3}
+  p,li{font-size:15.5px;color:#544450}
+  code{background:#f7ece1;padding:2px 7px;border-radius:6px;font-size:13px;direction:ltr;display:inline-block}
+  pre{background:#2b2230;color:#fbf0e6;border-radius:14px;padding:15px 17px;overflow:auto;
+    direction:ltr;text-align:left;font-size:13.5px;line-height:1.85;margin:0 0 14px}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.5px;background:#fff;border-radius:14px;overflow:hidden}
+  th,td{padding:10px 13px;text-align:start;border-bottom:1px solid #f4e7db}
+  th{background:#fdf2e8;color:#7c5c3a}
+  .box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 22px;margin:18px 0;
+    box-shadow:0 14px 34px -30px rgba(120,90,50,.7)}
+  .best{background:#eefaf1;border:1px solid #c7e6ce;border-radius:14px;padding:14px 18px;color:#2c6841;font-size:14.5px;margin:14px 0}
+  .warn{background:#fff3f0;border:1px dashed #efc6bd;border-radius:14px;padding:14px 18px;color:#8b4a3d;font-size:14.5px;margin:14px 0}
+  .tip{background:#fff8ec;border:1px dashed #e8cea8;border-radius:14px;padding:14px 18px;color:#7a5c3c;font-size:14.5px;margin:14px 0}
+  .where{background:#eef5ff;border:1px solid #ccdcf5;border-radius:14px;padding:16px 20px;color:#3c5e8f;font-size:14.5px;margin:16px 0}
+  a{color:#a5622a}
+  .pair{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+  @media(max-width:700px){.pair{grid-template-columns:1fr}}
+  .pair figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .pair img{width:100%;display:block}
+  .pair figcaption{font-size:13px;color:#8a7264;padding:8px 10px}
+  footer{max-width:900px;margin:0 auto;padding:0 22px 60px;color:#9a8674;font-size:13.5px;text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <h1>🎬 من صور ثابتة إلى فلم تتحرك فيه الشخصيات</h1>
+  <p class="lead">هذه الصفحة تعطيك «حزمة الفيديو» الجاهزة: لكل لقطة صورة + طلب حركة مكتوب بدقة.
+  تأخذها إلى أي أداة Image-to-Video، فترجع لك مقطعًا تتحرك فيه الأجساد والأيدي والشعر —
+  لا الشفاه وحدها. ثم تعيد تركيب الفيلم بأمر واحد.</p>
+</header>
+<main>
+
+  <div class="best">
+    <b>الخلاصة في سطر:</b> الأمر <code>python3 tools/i2v.py --all</code> يكتب لك مجلد
+    <code>i2v/</code> فيه ٣٦ طلبًا جاهزًا + ملف CSV + ملف JSON. ترفع الصور إلى الأداة،
+    تنزل المقاطع، تسمّيها بأسماء الصور، وتشغّل <code>bash make_film.sh --live</code>.
+  </div>
+
+  <h2>لماذا لا يمكن «تحريك الجسد» بالكود وحده؟ 🤔</h2>
+  <p>تخيّل أن معك صورة شخص مرسومة. تستطيع أن تفتح فمه وتقفله (هذا ما فعلناه).
+    لكن أن تجعل يده ترفع، وجسمه يميل، ورأسه يلتفت — هذا يحتاج أن <b>يُعاد رسم الشخص كاملًا</b>
+    في كل إطار. البرامج التي تفعل ذلك تسمى <b>Image-to-Video</b>، وهي تعمل على سيرفرات ضخمة
+    لا تتوفر داخل جهاز صغير. لذلك نجهّز لها الطلب كاملًا، ونعيد التركيب نحن.</p>
+
+  <h2>الخطوات — ٤ خطوات فقط ✅</h2>
+
+  <h3>١) صدّر الحزمة</h3>
+  <pre>cd ghaith-film
+python3 tools/i2v.py --all        # كل اللقطات (٣٦)
+python3 tools/i2v.py --live       # لقطات الحوار فقط
+python3 tools/i2v.py --shots S01 S14 S31</pre>
+  <p>تحصل على:</p>
+  <table>
+    <tr><th>ملف</th><th>ماذا فيه</th></tr>
+    <tr><td><code>i2v/prompts.txt</code></td><td>سطر واحد لكل لقطة — انسخ والصق في أي أداة</td></tr>
+    <tr><td><code>i2v/requests.json</code></td><td>نفس الطلبات للاستخدام البرمجي (API)</td></tr>
+    <tr><td><code>i2v/shotlist.csv</code></td><td>جدول تفتحه في Excel/Sheets</td></tr>
+  </table>
+
+  <h3>٢) ارفع الصورة + الصق الطلب في الأداة</h3>
+  <table>
+    <tr><th>الأداة</th><th>الرابط</th><th>مدة المقطع</th><th>ملاحظة</th></tr>
+    <tr><td>Kling AI</td><td dir=ltr>klingai.com</td><td>٥ أو ١٠ ثوان</td><td>الأفضل حاليًا في حركة الجسد والوجه</td></tr>
+    <tr><td>Luma Dream Machine</td><td dir=ltr>lumalabs.ai</td><td>٥ أو ٩ ثوان</td><td>يحافظ على الصورة الأصلية أكثر</td></tr>
+    <tr><td>Runway Gen-4</td><td dir=ltr>runwayml.com</td><td>٥ أو ١٠ ثوان</td><td>دقيق في الكاميرا</td></tr>
+    <tr><td>Pika / Hailuo / Veo</td><td dir=ltr>pika.art · hailuoai.video</td><td>٥ ثوان</td><td>بدائل جيدة</td></tr>
+  </table>
+
+  <div class="tip">
+    <b>سرّ الجودة:</b> إن كانت الأداة تسمح ببرومبت سلبي (Negative) استخدم:
+    <code>deformed hands, face morphing, changing clothes, warped background, flicker, text, watermark</code>
+    — هذه الكلمات تمنع أكثر أخطاء التحريك شيوعًا.
+  </div>
+
+  <h3>٣) نزّل المقاطع وسمّها بأسماء الصور</h3>
+  <p>كل مقطع يجب أن يحمل <b>اسم الصورة نفسه</b>، وليس رقم اللقطة. مثال: ناتج اللقطة S14 تسمّيه
+    <code>s08_workshop_table.mp4</code>. ضعه في <code>storyboard/clips/</code>.</p>
+  <div class="warn">
+    ⚠️ إن كانت اللقطة أطول من المقطع (مثلًا ١٥ ثانية والمقطع ١٠) فالمحرك سيكرّر آخر إطار —
+    قسّم اللقطة أو اختر أداة تسمح بمدة أطول. الأفضل: أبقِ المقطع بمدته وأعد ترتيب التوقيت عبر
+    <code>project/shots_data.py</code>.
+  </div>
+
+  <h3>٤) أعد تركيب الفيلم</h3>
+  <pre>bash make_film.sh --live</pre>
+  <p>المحرك يعيد الحركة الكاميرية والترجمة والصوت تلقائيًا، ويستخدم مقاطعك الجديدة.</p>
+
+  <h2>ما الذي يطلبه البرومبت من الأداة؟ 🎭</h2>
+  <p>كل طلب يذكر خمسة أشياء، وبهذا الترتيب:</p>
+  <ol>
+    <li><b>من في الصورة</b> — وصف ثابت لكل شخصية (الشعر، الملابس، الدبدوب) حتى لا يتغيّر الوجه.</li>
+    <li><b>من يتكلم ومن يستمع</b> — المتكلم يحرك فمه ويرفع حاجبه، والمستمع يرمش ويميل برأسه.</li>
+    <li><b>لغة الجسد</b> — ميل الجسم، حركة الأيدي، اهتزاز الشعر والأكمام.</li>
+    <li><b>حركة الكاميرا</b> — مأخوذة من دفتر اللقطات نفسه.</li>
+    <li><b>قاعدة الثبات</b> — «نفس الوجوه والملابس والإضاءة، بلا نص على الشاشة».</li>
+  </ol>
+
+  <h2>جدول اللقطات (٣٦) 📋</h2>
+  <table>
+    <tr><th>لقطة</th><th>الصورة</th><th>مدة</th><th>من يتكلم</th></tr>
+    <tr><td>S01</td><td dir=ltr>s01_livingroom</td><td>12.28</td><td>الراوي</td></tr>
+    <tr><td>S02</td><td dir=ltr>s02_gigi_dad</td><td>7.08</td><td>جيجي</td></tr>
+    <tr><td>S03</td><td dir=ltr>s01_livingroom</td><td>10.77</td><td>خالد</td></tr>
+    <tr><td>S04</td><td dir=ltr>s03_nana_worried</td><td>9.09</td><td>الراوي</td></tr>
+    <tr><td>S05</td><td dir=ltr>s03_nana_worried</td><td>8.94</td><td>نانا</td></tr>
+    <tr><td>S06</td><td dir=ltr>s04_candle_talk</td><td>10.93</td><td>خالد</td></tr>
+    <tr><td>S07</td><td dir=ltr>s04_candle_talk</td><td>3.19</td><td>نانا</td></tr>
+    <tr><td>S08</td><td dir=ltr>s01_livingroom</td><td>15.81</td><td>خالد</td></tr>
+    <tr><td>S09</td><td dir=ltr>s05_mission_cheer</td><td>4.68</td><td>سوسو</td></tr>
+    <tr><td>S10</td><td dir=ltr>s05_mission_cheer</td><td>4.6</td><td>نانا</td></tr>
+    <tr><td>S11</td><td dir=ltr>s02_gigi_dad</td><td>4.67</td><td>جيجي</td></tr>
+    <tr><td>S12</td><td dir=ltr>s06_group_hug</td><td>8.28</td><td>الراوي</td></tr>
+    <tr><td>S13</td><td dir=ltr>s07_phone_rings</td><td>3.4</td><td>—</td></tr>
+    <tr><td>S14</td><td dir=ltr>s08_workshop_table</td><td>6.66</td><td>الراوي</td></tr>
+    <tr><td>S15</td><td dir=ltr>s09_susu_drawing</td><td>4.83</td><td>سوسو</td></tr>
+    <tr><td>S16</td><td dir=ltr>s10_nana_card</td><td>9.03</td><td>نانا</td></tr>
+    <tr><td>S17</td><td dir=ltr>s11_gigi_handprint</td><td>2.89</td><td>جيجي</td></tr>
+    <tr><td>S18</td><td dir=ltr>s11_gigi_handprint</td><td>5.4</td><td>الراوي</td></tr>
+    <tr><td>S19</td><td dir=ltr>s12_dad_ready</td><td>6.5</td><td>خالد</td></tr>
+    <tr><td>S20</td><td dir=ltr>s13_hero_walk</td><td>7.78</td><td>الراوي</td></tr>
+    <tr><td>S21</td><td dir=ltr>s14_corridor</td><td>7.3</td><td>الراوي</td></tr>
+    <tr><td>S22</td><td dir=ltr>s14_corridor</td><td>1.48</td><td>البنات</td></tr>
+    <tr><td>S23</td><td dir=ltr>s15_mother_arms</td><td>4.13</td><td>سارة</td></tr>
+    <tr><td>S24</td><td dir=ltr>s15_mother_arms</td><td>4.37</td><td>خالد</td></tr>
+    <tr><td>S25</td><td dir=ltr>s11_gigi_handprint</td><td>5.4</td><td>الراوي</td></tr>
+    <tr><td>S26</td><td dir=ltr>s16_bassinet</td><td>1.58</td><td>سوسو</td></tr>
+    <tr><td>S27</td><td dir=ltr>s17_baby_closeup</td><td>4.99</td><td>الراوي</td></tr>
+    <tr><td>S28</td><td dir=ltr>s18_gigi_wow</td><td>4.08</td><td>جيجي</td></tr>
+    <tr><td>S29</td><td dir=ltr>s19_nana_pinky</td><td>6.31</td><td>نانا</td></tr>
+    <tr><td>S30</td><td dir=ltr>s20_sara_proud</td><td>8.76</td><td>سارة</td></tr>
+    <tr><td>S31</td><td dir=ltr>s21_sisters_around</td><td>8.0</td><td>🎵 نشيد</td></tr>
+    <tr><td>S32</td><td dir=ltr>s22_song_wide</td><td>8.0</td><td>🎵 نشيد</td></tr>
+    <tr><td>S33</td><td dir=ltr>s17_baby_closeup</td><td>7.0</td><td>🎵 نشيد</td></tr>
+    <tr><td>S34</td><td dir=ltr>s21_sisters_around</td><td>7.0</td><td>🎵 نشيد</td></tr>
+    <tr><td>S35</td><td dir=ltr>s22_song_wide</td><td>16.58</td><td>الراوي</td></tr>
+    <tr><td>S36</td><td dir=ltr>s24_photo_frame</td><td>6.0</td><td>—</td></tr>
+  </table>
+
+  <h2>أسئلة سريعة</h2>
+  <p><b>هل أستطيع تحريك لقطة واحدة فقط؟</b> نعم: <code>python3 tools/i2v.py --shots S31 S32</code>
+    (لقطتا النشيد). ضع المقطعين وأعد الرندر، وستبقى بقية اللقطات كما هي مع حركة الكاميرا.</p>
+  <p><b>هل يعمل هذا مع نسختي الحالية؟</b> نعم. الأداة تقرأ نفس دفتر اللقطات والحوار، فأي تعديل
+    في النص أو التوقيت ينعكس تلقائيًا في الطلبات.</p>
+  <p><b>وكم يكلف؟</b> الخطة المجانية في Kling/Luma تعطي عدة مقاطع يوميًا. ٣٦ لقطة تحتاج
+    عدة أيام مجانًا، أو رصيدًا مدفوعًا لإنجازها في ساعة.</p>
+
+</main>
+<footer>«فريق الحراسة السرّي» — حزمة Image-to-Video · تُولَّد بـ <code dir=ltr>tools/i2v.py</code></footer>
+</body>
+</html>

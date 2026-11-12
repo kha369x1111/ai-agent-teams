@@ -19,6 +19,7 @@ zip -q -r "$OUT/ghaith-film-code.zip" \
   افتح-دليل-التحريك.bat افتح-دليل-التحريك.command افتح-تحريك-3D.bat افتح-تحريك-3D.command \
   افتح-تنزيل-الفيلم.bat افتح-تنزيل-الفيلم.command \
   افتح-تحريك-الشخصيات.bat افتح-تحريك-الشخصيات.command \
+  حزمة-الفيديو-i2v.html افتح-حزمة-الفيديو.bat افتح-حزمة-الفيديو.command i2v \
   tools script project docs assets \
   -x '**/__pycache__/*' -x '*.pyc'
 
@@ -30,6 +31,7 @@ zip -q -r "$OUT/ghaith-film-light.zip" \
   افتح-دليل-التحريك.bat افتح-دليل-التحريك.command افتح-تحريك-3D.bat افتح-تحريك-3D.command \
   افتح-تنزيل-الفيلم.bat افتح-تنزيل-الفيلم.command \
   افتح-تحريك-الشخصيات.bat افتح-تحريك-الشخصيات.command \
+  حزمة-الفيديو-i2v.html افتح-حزمة-الفيديو.bat افتح-حزمة-الفيديو.command i2v \
   tools script project docs assets storyboard/raw storyboard/keys audio \
   -x '**/__pycache__/*' -x '*.pyc' -x 'storyboard/raw/*.png'
 

@@ -89,6 +89,7 @@ audio/lines/*.mp3 ─┘        │                        │
 | تحميل النسخة المسطّحة | `deliver/ghaith_alhurras_1080p.mp4` |
 | إعادة بناء الفيلم بأمر واحد | `bash make_film.sh` (أو `--animate` مع التحريك) |
 | تحريك الشخصيات (كلام) | `python3 tools/talk_char.py --all` ثم `bash make_film.sh` |
+| تحريك الجسم كاملًا (i2v) | `python3 tools/i2v.py --all` ثم ارفع الصور لأداة فيديو |
 | تحريك الكاميرا 3D | `python3 tools/depth3d.py --all` |
 | تحريك الصور (2.5D داخل الرندر) | `bash make_film.sh --animate` |
 | دليل التحريك الكامل | `تحريك-3D.html` (أو `docs/animation-guide.md`) |
@@ -132,6 +133,7 @@ python3 tools/serve.py --port 8080   # مشاهدة في المتصفح
 | 🎭 تحريك الصور | **`دليل-التحريك.html`** | `docs/animation-guide.md` |
 | 🧊 تحريك الكاميرا 3D | **`تحريك-3D.html`** | `tools/depth3d.py` |
 | 🗣️ تحريك الشخصيات (كلام) | **`تحريك-الشخصيات.html`** | `tools/talk_char.py` |
+| 🎬 تحريك الجسم كاملًا (Image-to-Video) | **`حزمة-الفيديو-i2v.html`** | `tools/i2v.py` |
 | ⬇️ صفحة التحميل | `تحميل.html` | — |
 | 🎬 صفحة المشاهدة | `index.html` | — |
 
